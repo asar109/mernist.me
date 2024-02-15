@@ -76,9 +76,10 @@ export default function MyName(props: { finishedLoading: boolean }) {
         }}
         className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
       >
-        I'm a <span className="text-AAsecondary">Full Stack Developer</span>{" "}
-        with a knack for problem-solving and a passion for crafting exceptional
-        digital experiences. My expertise lies in the{" "}
+        I&apos;m a{" "}
+        <span className="text-AAsecondary">Full Stack Developer</span> with a
+        knack for problem-solving and a passion for crafting exceptional digital
+        experiences. My expertise lies in the{" "}
         <span className="text-AAsecondary">MERN stack</span>, where I specialize
         in developing and designing immersive{" "}
         <span className="text-AAsecondary">dynamic web applications</span>. This

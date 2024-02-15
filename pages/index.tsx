@@ -191,7 +191,7 @@ export default function Home() {
           ) : (
             <></>
           )}
-          {!isProd && <ScreenSizeDetector />}
+          {/* {!isProd && <ScreenSizeDetector />} */}
         </div>
       ) : (
         <Maintenance />

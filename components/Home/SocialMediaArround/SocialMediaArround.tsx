@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
+import { motion } from "../../../node_modules/framer-motion";
 import GithubIcon from "../../Icons/GithubIcon";
 import LinkedinIcon from "../../Icons/LinkedinIcon";
 import InstagramIcon from "../../Icons/InstagramIcon";
@@ -15,7 +15,7 @@ const IconClickableWithAnimation = props => {
       className=""
     >
       <a href={props.href} className="" target={"_blank"} rel="noreferrer">
-        <props.Icon className={"w-6 h-6 text-gray-400 hover:text-AAsecondary fill-current hover:cursor-pointer"} />
+        <props.Icon className={"w-6 h-6 text-gray-400 hover:text-secondary fill-current hover:cursor-pointer"} />
       </a>
     </motion.div>
   );
@@ -63,8 +63,8 @@ export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
             className=""
           >
             <a href="mailto:abdellatif@anaflous.com" target={"_blank"} rel="noreferrer">
-              <span className=" font-Header tracking-wider text-gray-400 hover:text-AAsecondary hover:cursor-pointer">
-                abdellatif<span className="text-AAsecondary">@</span>anaflous<span className="text-AAsecondary">.</span>com
+              <span className=" font-Header tracking-wider text-gray-400 hover:text-secondary hover:cursor-pointer">
+                abdellatif<span className="text-secondary">@</span>anaflous<span className="text-secondary">.</span>com
               </span>
             </a>
           </motion.div>

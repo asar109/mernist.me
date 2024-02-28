@@ -72,7 +72,7 @@ export default function TimerSpan({
           animate={{ opacity: [0, 1, 0] }}
           transition={{ duration: 0.5, repeat: Infinity }}
           ref={timerSpanRef}
-          className="text-AAError md:text-xl text-sm"
+          className="text-error md:text-xl text-sm"
         >
           0:05
         </motion.span>
@@ -83,7 +83,7 @@ export default function TimerSpan({
           animate={{ opacity: [0, 1, 0] }}
           transition={{ duration: 1, repeat: Infinity }}
           ref={timerSpanRef}
-          className="text-AAError md:text-xl text-sm"
+          className="text-error md:text-xl text-sm"
         >
           0:15
         </motion.span>

@@ -142,7 +142,7 @@ export default function Home() {
 
   return (
     <div
-      className={` bg-AAprimary min-h-screen  w-full flex flex-col justify-center items-center ${
+      className={` bg-primary min-h-screen  w-full flex flex-col justify-center items-center ${
         isFinished ? "pt-48" : ""
       }`}
     >
@@ -157,7 +157,7 @@ export default function Home() {
                     setInputLostFocus(false);
                   }}
                   ref={absoluteTextINputRef}
-                  className="absolute w-full z-10 bg-AAprimary opacity-90 rounded border-[0.5px] border-gray-700 flex justify-center items-center
+                  className="absolute w-full z-10 bg-primary opacity-90 rounded border-[0.5px] border-gray-700 flex justify-center items-center
                           hover:cursor-pointer"
                 >
                   <span className="text-gray-400 font-mono">Click to continue..</span>
@@ -188,13 +188,13 @@ export default function Home() {
                       {item.word.split("").map((char, i) => {
                         if (
                           char.localeCompare(" ") == 0 &&
-                          myText[1][item.indexFrom + i].charColor.localeCompare("text-AAError") == 0
+                          myText[1][item.indexFrom + i].charColor.localeCompare("text-error") == 0
                         ) {
                           return (
-                            <div key={i} className={`relative text-AAError`}>
+                            <div key={i} className={`relative text-error`}>
                               {i + item.indexFrom == myText[2].CursorPosition ? <CursorCarrotComp /> : <></>}
                               <div className="relative">
-                                &nbsp; <div className="absolute bottom-0 h-[3px] w-full bg-AAError"></div>
+                                &nbsp; <div className="absolute bottom-0 h-[3px] w-full bg-error"></div>
                               </div>
                             </div>
                           );
@@ -230,10 +230,10 @@ export default function Home() {
                   ref={inputRef}
                   type="text"
                   // ?INFORMATIONAL : uncomment the following line to see the input
-                  // className="w-52 bg-AAprimary text-xl text-center text-gray-600 border-b-2 border-b-gray-600
+                  // className="w-52 bg-primary text-xl text-center text-gray-600 border-b-2 border-b-gray-600
                   //           py-2 px-4 focus:outline-none "
 
-                  className="w-0 h-0 bg-AAprimary text-xl text-center text-gray-600  border-b-gray-600
+                  className="w-0 h-0 bg-primary text-xl text-center text-gray-600  border-b-gray-600
                   py-2 px-4 focus:outline-none "
                   
                   onChange={e => {

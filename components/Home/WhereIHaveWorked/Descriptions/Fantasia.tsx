@@ -22,7 +22,7 @@ export default function Fantasia() {
       <div className="flex flex-col spacey-y-2">
         {/* Title */}
         <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
-          Server Manager Assistant <span className="text-AAsecondary">@ Windows Server</span>
+          Server Manager Assistant <span className="text-secondary">@ Windows Server</span>
         </span>
         {/* Date */}
         <span className="font-mono text-xs text-gray-500">June - July 2018</span>
@@ -31,7 +31,7 @@ export default function Fantasia() {
       {tasks.map((item, index) => {
             return (
               <div key={index} className="flex flex-row space-x-2">
-                <ArrowIcon className={" h-5 w-4 text-AAsecondary flex-none"} />
+                <ArrowIcon className={" h-5 w-4 text-secondary flex-none"} />
                 <span
                   className="text-gray-500 sm:text-sm text-xs"
                   dangerouslySetInnerHTML={{

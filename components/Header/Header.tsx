@@ -1,10 +1,11 @@
-import { motion } from "framer-motion";
+
 import { useContext, useEffect, useRef, useState } from "react";
 import AppContext from "../AppContextFolder/AppContext";
-import DesktopMenu from "./Headercomp/DesktopMenu";
-import IconMenu from "./Headercomp/IconMenu";
-import Logo from "./Headercomp/Logo";
-import MobileMenu from "./Headercomp/MobileMenu";
+import DesktopMenu from "./_components/DesktopMenu";
+import IconMenu from "./_components/IconMenu";
+import Logo from "./_components/Logo";
+import MobileMenu from "./_components/MobileMenu";
+import { motion } from "framer-motion";
 
 const addClass = (ref: any, myclass: string) => {
   ref.current?.classLIst.add(myclass);
@@ -96,13 +97,13 @@ const Header = (props: { finishedLoading: boolean; sectionsRef }) => {
         }}
         className={`w-full fixed ${
           ShowElement ? `bg-opacity-70 shadow-xl` : `bg-opacity-0 `
-        } bg-AAprimary flex 
+        } bg-primary flex 
       justify-between px-6 sm:px-12 py-2 sm:py-4  transition duration-4000 translate-y-0 z-20`}
       >
         {/* Logo A */}
         <div className="flex justify-start items-center">
           <Logo finishedLoading={props.finishedLoading} />
-          <h3 className="ml-1 text-AAsecondary">Mernist</h3>
+          <h3 className="ml-1 text-secondary">Mernist</h3>
         </div>
         {/* Hide icon Designed by me */}
 

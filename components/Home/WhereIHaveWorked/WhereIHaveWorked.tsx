@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
+import { motion } from "../../../node_modules/framer-motion";
 import ArrowIcon from "../../Icons/ArrowIcon";
 import TrouveTavoie from "./Descriptions/TrouveTavoie";
 import FeverTokens from "./Descriptions/FeverTokens";
@@ -32,12 +32,12 @@ export default function WhereIHaveWorked() {
   };
   const [DescriptionJob, setDescriptionJob] = React.useState("ENSVision");
   return (
-    <div data-aos="fade-up" className="flex flex-col items-center justify-center py-24 space-y-12 bg-AAprimary">
+    <div data-aos="fade-up" className="flex flex-col items-center justify-center py-24 space-y-12 bg-primary">
       {/* // ? Title "Where I've Worked" */}
       <section className="flex flex-row items-center">
         <div className="flex flex-row items-center">
-          <ArrowIcon className={"flex-none h-4 md:h-6 w-4 md:w-5 text-AAsecondary"} />
-          <span className="text-AAsecondary font-sans text-sm  sm:text-xl"> 02.</span>
+          <ArrowIcon className={"flex-none h-4 md:h-6 w-4 md:w-5 text-secondary"} />
+          <span className="text-secondary font-sans text-sm  sm:text-xl"> 02.</span>
         </div>
 
         <span className="text-gray-200 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
@@ -80,12 +80,12 @@ const CompaniesBar = props => {
           props.setDescriptionJob(props.DescriptionJob);
           setCompanyNameBackgroundColorGreen(props.CompanyNameBackgroundColorGreen);
         }}
-        className={`flex-none sm:text-sm text-xs text-center md:text-left  hover:text-AAsecondary
+        className={`flex-none sm:text-sm text-xs text-center md:text-left  hover:text-secondary
              hover:bg-ResumeButtonHover rounded  font-mono  
              py-3 md:pl-6 md:px-4 md:w-44 w-32 duration-500
              ${
                companyNameBackgroundColorGreen[props.ButtonOrderOfcompanyNameBackgroundColorGreen]
-                 ? "bg-ResumeButtonHover text-AAsecondary"
+                 ? "bg-ResumeButtonHover text-secondary"
                  : "text-gray-500"
              }`}
       >
@@ -110,7 +110,7 @@ const CompaniesBar = props => {
         <motion.div
           animate={{ y: barPosition }}
           // ref={barRef}
-          className={`absolute w-10 h-0.5 md:w-0.5 md:h-12 rounded bg-AAsecondary `}
+          className={`absolute w-10 h-0.5 md:w-0.5 md:h-12 rounded bg-secondary `}
         ></motion.div>
       </div>
       {/* // ? Companies name as buttons */}
@@ -181,7 +181,7 @@ const CompaniesBar = props => {
           />
         </div>
         <div className="block md:hidden h-0.5 rounded bg-gray-500">
-          <motion.div animate={{ x: barAbovePosition }} className="w-[128px] h-0.5 rounded bg-AAsecondary"></motion.div>
+          <motion.div animate={{ x: barAbovePosition }} className="w-[128px] h-0.5 rounded bg-secondary"></motion.div>
         </div>
       </div>
     </div>

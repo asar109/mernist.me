@@ -72,7 +72,7 @@ type CharAndColor = { char: string; charColor: string };
 export const calculateWpm = (input: CharAndColor[], time: number) => {
   let cpm = 0;
   for (let i = 0; i < input.length; i++) {
-    if (input[i].charColor == "text-AAsecondary") {
+    if (input[i].charColor == "text-secondary") {
       cpm++;
     } else if (input[i].charColor == "text-gray-500") {
       break;
@@ -86,9 +86,9 @@ export const calculateAccuracy = (input: CharAndColor[]) => {
   let correct = 0;
   let incorrect = 0;
   for (let i = 0; i < input.length; i++) {
-    if (input[i].charColor == "text-AAsecondary") {
+    if (input[i].charColor == "text-secondary") {
       correct++;
-    } else if (input[i].charColor == "text-AAerror") {
+    } else if (input[i].charColor == "text-error") {
       incorrect++;
     }
   }
@@ -120,7 +120,7 @@ export const handleOnChangeInput = (
   let targetWordIndexIncrement = activeWordWithIndex.wordDetail.indexFrom;
   input.split("").forEach((element, index) => {
     myText[1][targetWordIndexIncrement].charColor =
-      element === myText[1][targetWordIndexIncrement].char ? "text-AAsecondary" : "text-AAError";
+      element === myText[1][targetWordIndexIncrement].char ? "text-secondary" : "text-error";
     targetWordIndexIncrement++;
   });
   // checks if input is equal to the active word ( true => set inputValue to "" )

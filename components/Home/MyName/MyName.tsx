@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
+import { motion } from "../../../node_modules/framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
 export default function MyName(props: { finishedLoading: boolean }) {
@@ -22,7 +22,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
             duration: props.finishedLoading ? 0 : 0.2,
           },
         }}
-        className="text-AAsecondary font-mono"
+        className="text-secondary font-mono"
       >
         Hi, my name is
       </motion.span>
@@ -76,18 +76,19 @@ export default function MyName(props: { finishedLoading: boolean }) {
         }}
         className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
       >
-        I&apos;m a{" "}
-        <span className="text-AAsecondary">Full Stack Developer</span> with a
-        knack for problem-solving and a passion for crafting exceptional digital
-        experiences. My expertise lies in the{" "}
-        <span className="text-AAsecondary">MERN stack</span>, where I specialize
+        I&apos;m a <span className="text-secondary">Full Stack Developer</span>{" "}
+        with a knack for problem-solving and a passion for crafting exceptional
+        digital experiences. My expertise lies in the{" "}
+        <span className="text-secondary">MERN stack</span>, where I specialize
         in developing and designing immersive{" "}
-        <span className="text-AAsecondary">dynamic web applications</span>. This
-        involves extensive work with{" "}
-        <span className="text-AAsecondary">React.js</span>,{" "}
-        <span className="text-AAsecondary">Next.js</span>,{" "}
-        <span className="text-AAsecondary">Node.js</span>, and{" "}
-        <span className="text-AAsecondary">TypeScript</span>.
+        <span className="text-secondary">
+          dynamic web & mobile applications
+        </span>
+        . This involves extensive work with{" "}
+        <span className="text-secondary">React</span>,{" "}
+        <span className="text-secondary">Next</span>,{" "}
+        <span className="text-secondary">Node</span>, and{" "}
+        <span className="text-secondary">TypeScript</span>.
         {/* <br className="2xl:block hidden" />creating and deploying them, as well as implementing the
         front-end components to enable seamless user interactions. */}
       </motion.h3>
@@ -107,7 +108,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
         className="mt-12"
       >
         <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
-          <button className="bg-AAprimary text-AAsecondary border rounded px-4 sm:px-8 py-3 sm:py-4 border-AAsecondary">
+          <button className="bg-primary text-secondary border rounded px-4 sm:px-8 py-3 sm:py-4 border-secondary">
             Check out my resume!
           </button>
         </a>

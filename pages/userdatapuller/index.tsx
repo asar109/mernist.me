@@ -112,11 +112,11 @@ export default function Page() {
           content="upgrade-insecure-requests"
         ></meta>
       </Head>
-      <div className="min-h-screen w-full bg-AAprimary text-white 2xl:px-64 xl:px-44 lg:px-24 md:px-16 px-4 ">
+      <div className="min-h-screen w-full bg-primary text-white 2xl:px-64 xl:px-44 lg:px-24 md:px-16 px-4 ">
         <div className="h-full w-full  py-16 sm:px-12">
           {/* // ? Ip Address, (Latitude & Longitude) ==> only > md */}
           <div className="w-full pb-6 flex md:flex-row flex-col space-y-4 justify-around items-center">
-            <span className="font-bold md:text-4xl text-lg text-AAsecondary">
+            <span className="font-bold md:text-4xl text-lg text-secondary">
               <span className="text-white hover:cursor-pointer">IP :</span>{" "}
               {userData.current?.query || "Checking..."}
             </span>
@@ -180,12 +180,12 @@ export default function Page() {
                     <span className="text-gray-200 font-semibold flex-none w-32 text-sm md:text-base">
                       Window size :
                     </span>
-                    <span className="text-AAsecondary font-semibold  text-sm md:text-base">
-                      <span ref={windowWidth} className="text-AAsecondary">
+                    <span className="text-secondary font-semibold  text-sm md:text-base">
+                      <span ref={windowWidth} className="text-secondary">
                         {userData.current?.screenWidth || ""}
                       </span>
                       <span className="text-gray-300"> x </span>
-                      <span ref={windowHeight} className="text-AAsecondary">
+                      <span ref={windowHeight} className="text-secondary">
                         {userData.current?.screenHeight || ""}
                       </span>
                     </span>
@@ -195,13 +195,13 @@ export default function Page() {
                     <span className="text-gray-200 font-semibold flex-none w-36 text-sm md:text-base">
                       Mouse position :
                     </span>
-                    <span className="text-AAsecondary font-semibold text-sm md:text-base">
+                    <span className="text-secondary font-semibold text-sm md:text-base">
                       <span className="text-gray-300">X - </span>
-                      <span ref={mouseX} className="text-AAsecondary">
+                      <span ref={mouseX} className="text-secondary">
                         {0}
                       </span>
                       <span className="text-gray-300">, Y - </span>
-                      <span ref={mouseY} className="text-AAsecondary">
+                      <span ref={mouseY} className="text-secondary">
                         {0}
                       </span>
                     </span>
@@ -228,14 +228,14 @@ export default function Page() {
                     <span className="">First visit :</span>
                     <span
                       ref={firstVisit_Ref}
-                      className="text-AAsecondary"
+                      className="text-secondary"
                     ></span>
                   </div>
                   <div className="flex flex-row space-x-1 text-sm">
                     <span className="">Last visit :</span>
                     <span
                       ref={lastVisit_Ref}
-                      className="text-AAsecondary"
+                      className="text-secondary"
                     ></span>
                   </div>
                 </div>
@@ -247,7 +247,7 @@ export default function Page() {
                   } absolute h-full w-full border-[1px] border-white z-10 flex justify-center items-center`}
                 >
                   <div className="flex flex-col space-y-2 items-center">
-                    <Loader className="mr-2 w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-AAsecondary" />
+                    <Loader className="mr-2 w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-secondary" />
                     <span className="">Updating location...</span>
                   </div>
                 </div>
@@ -274,7 +274,7 @@ export default function Page() {
                       setZipCode
                     );
                   }}
-                  className="text-AAsecondary underline text-sm hover:cursor-pointer"
+                  className="text-secondary underline text-sm hover:cursor-pointer"
                 >
                   Update My IP Location
                 </span>

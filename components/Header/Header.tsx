@@ -1,4 +1,3 @@
-
 import { useContext, useEffect, useRef, useState } from "react";
 import AppContext from "../AppContextFolder/AppContext";
 import DesktopMenu from "./_components/DesktopMenu";
@@ -7,9 +6,6 @@ import Logo from "./_components/Logo";
 import MobileMenu from "./_components/MobileMenu";
 import { motion } from "framer-motion";
 
-const addClass = (ref: any, myclass: string) => {
-  ref.current?.classLIst.add(myclass);
-};
 const Header = (props: { finishedLoading: boolean; sectionsRef }) => {
   const RefNavBar = useRef<HTMLDivElement>(null);
   const [ShowElement, setShowElement] = useState(false);
@@ -100,12 +96,13 @@ const Header = (props: { finishedLoading: boolean; sectionsRef }) => {
         } bg-primary flex 
       justify-between px-6 sm:px-12 py-2 sm:py-4  transition duration-4000 translate-y-0 z-20`}
       >
-        {/* Logo A */}
+        {/* Logo Mernist */}
         <div className="flex justify-start items-center">
           <Logo finishedLoading={props.finishedLoading} />
-          <h3 className="ml-1 text-secondary">Mernist</h3>
+          <h3 className="ml-1 tracking-wide font-semibold text-secondary">
+            Mernist
+          </h3>
         </div>
-        {/* Hide icon Designed by me */}
 
         <IconMenu
           rotate={rotate}

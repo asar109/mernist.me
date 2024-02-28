@@ -3,11 +3,15 @@ import Img from "../../../components/smallComp/image/Img";
 import ArrowIcon from "../../../components/Icons/ArrowIcon";
 export default function AboutMe(props) {
   const technologies = [
-    ["Next.js", "JavaScript (ES6+)", "Tailwind CSS", "Ether.js", "Solidity"],
-    ["Node.js", "TypeScript", "Framer Motion", "react-moralis", "web3.js"],
+    ["Next.js", "JavaScript (ES6+)", "Tailwind CSS", "React.js", "Prisma"],
+    ["Nginx", "Node.js", "TypeScript", "Framer Motion", "React Native"],
   ];
   return (
-    <div id="aboutSection" data-aos="fade-up" className="snap-start flex flex-col  items-center py-20 bg-primary">
+    <div
+      id="aboutSection"
+      data-aos="fade-up"
+      className="snap-start flex flex-col  items-center py-20 bg-primary"
+    >
       {/* // ? 0.1 About Me */}
       <div
         className="flex flex-col space-y-8 px-4 sm:px-0 w-full sm:w-[500px] 
@@ -15,8 +19,15 @@ export default function AboutMe(props) {
       >
         <div className="flex flex-row items-center ">
           <div className="flex flex-row  items-center mr-4">
-            <ArrowIcon className={"flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-secondary"} />
-            <span className="text-secondary font-Header text-sm  sm:text-xl"> 01.</span>
+            <ArrowIcon
+              className={
+                "flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-secondary"
+              }
+            />
+            <span className="text-secondary font-Header text-sm  sm:text-xl">
+              {" "}
+              01.
+            </span>
             <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
               About Me
             </span>
@@ -29,39 +40,40 @@ export default function AboutMe(props) {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Hello! My name is Abdellatif, and I am a passionate software engineer and problem solver, dedicated to
-                creating impactful codes that thrive on the internet. My journey in computer science began in 2009 when
-                I delved into the world of Ethical Hacking using BackTrack OS. Little did I know that programming skills
-                would become essential in pursuing this interest, marking the start of my programming journey.
+                Welcome to Mernist. I'm a firm believer that passion knows no
+                bounds, and my journey from a BBA graduate to a seasoned tech
+                enthusiast is a testament to that belief. While my academic
+                background may have been rooted in business administration, my
+                heart was always drawn to the ever-evolving realm of technology.
               </span>
             </div>
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Since pursuing my engineering degree, my career has taken me through diverse industries, allowing me to
-                refine my expertise in desktop and web development. In the realm of{" "}
-                <span className="text-secondary">web3</span>, I am dedicated to pushing boundaries and driving
-                advancements. With experience working alongside esteemed organizations like{" "}
-                <span className="text-secondary">ENS Vision</span>, where I played a key role in releasing v2 of{" "}
-                <span className="text-secondary">ENS Vision Marketplace</span> , my passion for web3 and continuous
-                learning drives me to make a positive impact and advance technology.
+                Driven by an insatiable curiosity and a hunger for knowledge, I
+                embarked on a journey of{" "}
+                <span className="text-secondary">self-discovery,</span>{" "}
+                immersing myself in the vast ocean of digital possibilities.
+                What started as a mere interest soon blossomed into a
+                full-fledged passion, shaping the trajectory of my professional
+                life.
               </span>
             </div>
-            {/* <div className="font-Header tracking-wide">
-              <span className="text-gray-400  ">
-                Fast-forward to today, I&apos;ve had the privilege of working at
-                <span className="text-secondary"> a huge manufacturing company</span>,
-                <span className="text-secondary"> a start-up</span>,{" "}
-                <span className="text-secondary">export-import companies</span>, also
-                <span className="text-secondary"> freelancing</span> and recently as Lead for the{" "}
-                <span className="text-secondary">Google Developer Student club</span>. Experienced in Desktop & Web
-                Development, lately with Arduino Development. My main focus these days is creating and testing{" "}
-                <span className="text-secondary">Smart Contracts</span> with Hardhat.
+            <div className="font-Header ">
+              <span className="text-gray-400 ">
+                Over the past two years, I've had the privilege of diving deep
+                into the world of development, specializing primarily in the
+                <span className="text-secondary"> MERN stack.</span>
+                This dynamic combination of technologies has allowed me to craft
+                robust and scalable solutions that seamlessly integrate
+                front-end and back-end functionalities, bringing digital visions
+                to life with finesse and precision.
               </span>
-            </div> */}
+            </div>
 
             <div className="font-Header tracking-wide">
               <span className="text-gray-400  ">
-                Here are a few technologies I&apos;ve been working with recently :
+                Here are a few technologies I&apos;ve been working with recently
+                :
               </span>
             </div>
             <div className="font-Header tracking-wide flex flex-row space-x-16">
@@ -69,9 +81,14 @@ export default function AboutMe(props) {
                 <div className="flex flex-col space-y-4 sm:text-base text-sm">
                   {technologies[0].map((tech, index) => {
                     return (
-                      <div key={index} className="flex flex-row items-center space-x-2">
+                      <div
+                        key={index}
+                        className="flex flex-row items-center space-x-2"
+                      >
                         <ArrowIcon className={"h-3 w-3 text-secondary"} />
-                        <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
+                        <span className="text-gray-400 sm:text-sm text-xs">
+                          {tech}
+                        </span>
                       </div>
                     );
                   })}
@@ -81,9 +98,14 @@ export default function AboutMe(props) {
                 <div className="flex flex-col space-y-4 sm:text-base text-sm">
                   {technologies[1].map((tech, index) => {
                     return (
-                      <div key={index} className="flex flex-row items-center space-x-2">
+                      <div
+                        key={index}
+                        className="flex flex-row items-center space-x-2"
+                      >
                         <ArrowIcon className={"h-3 w-3 text-secondary"} />
-                        <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
+                        <span className="text-gray-400 sm:text-sm text-xs">
+                          {tech}
+                        </span>
                       </div>
                     );
                   })}

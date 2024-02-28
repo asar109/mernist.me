@@ -1,5 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Slackey } from "next/font/google";
+import { cn } from "../../../lib/utils";
+
+const font = Slackey({ weight: "400", subsets: ["latin"] });
+
 export default function Logo(props: { finishedLoading: boolean }) {
   return (
     <>
@@ -15,17 +20,38 @@ export default function Logo(props: { finishedLoading: boolean }) {
       >
         <motion.span
           initial={{ x: 1 }}
-          className="absolute h-full w-full flex justify-center items-center text-lg font-Header text-secondary"
+          className={cn(
+            "absolute h-full w-full flex justify-center items-center text-lg font-Header font-bold text-secondary",
+            font.className
+          )}
         >
           M
         </motion.span>
 
-        <motion.div animate={{ rotate: -30, y: 6.5 }} className="h-1 w-6 rounded bg-secondary"></motion.div>
-        <motion.div animate={{ rotate: 90, x: -9, y: 18 }} className="h-1 w-6 rounded bg-secondary"></motion.div>
-        <motion.div animate={{ rotate: 29, y: 29,  }} className="h-1 w-6 rounded bg-secondary"></motion.div>
-        <motion.div animate={{ rotate: -30, y: 25, x: 18 }} className="h-1 w-6 rounded bg-secondary"></motion.div>
-        <motion.div animate={{ rotate: 30, x: 18., y: -9.2 }} className="h-1 w-6 rounded bg-secondary"></motion.div>
-        <motion.div animate={{ rotate: 90, x: 27, y: 2 }} className="h-1 w-6 rounded bg-secondary"></motion.div>
+        <motion.div
+          animate={{ rotate: -30, y: 6.5 }}
+          className="h-1 w-6 rounded bg-secondary"
+        ></motion.div>
+        <motion.div
+          animate={{ rotate: 90, x: -9, y: 18 }}
+          className="h-1 w-6 rounded bg-secondary"
+        ></motion.div>
+        <motion.div
+          animate={{ rotate: 29, y: 29 }}
+          className="h-1 w-6 rounded bg-secondary"
+        ></motion.div>
+        <motion.div
+          animate={{ rotate: -30, y: 25, x: 18 }}
+          className="h-1 w-6 rounded bg-secondary"
+        ></motion.div>
+        <motion.div
+          animate={{ rotate: 30, x: 18, y: -9.2 }}
+          className="h-1 w-6 rounded bg-secondary"
+        ></motion.div>
+        <motion.div
+          animate={{ rotate: 90, x: 27, y: 2 }}
+          className="h-1 w-6 rounded bg-secondary"
+        ></motion.div>
       </motion.div>
     </>
   );

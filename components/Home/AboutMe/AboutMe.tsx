@@ -40,8 +40,8 @@ export default function AboutMe(props) {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Welcome to Mernist. I'm a firm believer that passion knows no
-                bounds, and my journey from a BBA graduate to a seasoned tech
+                Welcome to Mernist. I&apos;m a firm believer that passion knows
+                no bounds, and my journey from a BBA graduate to a seasoned tech
                 enthusiast is a testament to that belief. While my academic
                 background may have been rooted in business administration, my
                 heart was always drawn to the ever-evolving realm of technology.
@@ -60,8 +60,9 @@ export default function AboutMe(props) {
             </div>
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Over the past two years, I've had the privilege of diving deep
-                into the world of development, specializing primarily in the
+                Over the past two years, I&apos;ve had the privilege of diving
+                deep into the world of development, specializing primarily in
+                the
                 <span className="text-secondary"> MERN stack.</span>
                 This dynamic combination of technologies has allowed me to craft
                 robust and scalable solutions that seamlessly integrate

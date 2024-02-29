@@ -1,11 +1,8 @@
-import React from "react";
-import { motion } from "../../../node_modules/framer-motion";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 export default function MyName(props: { finishedLoading: boolean }) {
-  const router = useRouter();
   return (
     <div
+      id="home"
       className="h-full flex flex-col justify-center
       px-8 2xl:px-72 xl:px-56 lg:px-32  md:px-28 sm:px-8 py-32 sm:py-52  "
     >
@@ -14,11 +11,11 @@ export default function MyName(props: { finishedLoading: boolean }) {
         animate={{ y: 0, opacity: 1 }}
         transition={{
           opacity: {
-            delay: props.finishedLoading ? 0 : 10.4,
+            delay: props.finishedLoading ? 0 : 5.4,
             duration: props.finishedLoading ? 0 : 0.2,
           },
           y: {
-            delay: props.finishedLoading ? 0 : 10.4,
+            delay: props.finishedLoading ? 0 : 5.4,
             duration: props.finishedLoading ? 0 : 0.2,
           },
         }}
@@ -31,11 +28,11 @@ export default function MyName(props: { finishedLoading: boolean }) {
         animate={{ y: 0, opacity: 1 }}
         transition={{
           opacity: {
-            delay: props.finishedLoading ? 0 : 10.5,
+            delay: props.finishedLoading ? 0 : 5.5,
             duration: props.finishedLoading ? 0 : 0.2,
           },
           y: {
-            delay: props.finishedLoading ? 0 : 10.5,
+            delay: props.finishedLoading ? 0 : 5.5,
             duration: props.finishedLoading ? 0 : 0.2,
           },
         }}
@@ -48,11 +45,11 @@ export default function MyName(props: { finishedLoading: boolean }) {
         animate={{ y: 0, opacity: 1 }}
         transition={{
           opacity: {
-            delay: props.finishedLoading ? 0 : 10.6,
+            delay: props.finishedLoading ? 0 : 5.6,
             duration: props.finishedLoading ? 0 : 0.2,
           },
           y: {
-            delay: props.finishedLoading ? 0 : 10.6,
+            delay: props.finishedLoading ? 0 : 5.6,
             duration: props.finishedLoading ? 0 : 0.2,
           },
         }}
@@ -66,11 +63,11 @@ export default function MyName(props: { finishedLoading: boolean }) {
         animate={{ y: 0, opacity: 1 }}
         transition={{
           opacity: {
-            delay: props.finishedLoading ? 0 : 10.7,
+            delay: props.finishedLoading ? 0 : 5.7,
             duration: props.finishedLoading ? 0 : 0.2,
           },
           y: {
-            delay: props.finishedLoading ? 0 : 10.7,
+            delay: props.finishedLoading ? 0 : 5.7,
             duration: props.finishedLoading ? 0 : 0.2,
           },
         }}
@@ -97,11 +94,11 @@ export default function MyName(props: { finishedLoading: boolean }) {
         animate={{ y: 0, opacity: 1 }}
         transition={{
           opacity: {
-            delay: props.finishedLoading ? 0 : 10.8,
+            delay: props.finishedLoading ? 0 : 5.8,
             duration: props.finishedLoading ? 0 : 0.2,
           },
           y: {
-            delay: props.finishedLoading ? 0 : 10.8,
+            delay: props.finishedLoading ? 0 : 5.8,
             duration: props.finishedLoading ? 0 : 0.2,
           },
         }}

@@ -50,7 +50,7 @@ export default function Home() {
       setShowElement(false);
       context.setSharedState(context.sharedState);
       context.sharedState.finishedLoading = true;
-    }, 5000);
+    }, 5500);
   }, [context, context.sharedState]);
 
   setTimeout(() => {}, 5000);
@@ -83,7 +83,7 @@ export default function Home() {
           finishedLoading={context.sharedState.finishedLoading}
           sectionsRef={homeRef}
         />
-        <MyName finishedLoading={true} />
+        <MyName finishedLoading={context.sharedState.finishedLoading} />
         <SocialMediaArround
           finishedLoading={context.sharedState.finishedLoading}
         />

@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "../../../node_modules/framer-motion";
+import { motion } from "framer-motion";
 import ArrowIcon from "../../Icons/ArrowIcon";
 import TrouveTavoie from "./Descriptions/TrouveTavoie";
 import FeverTokens from "./Descriptions/FeverTokens";

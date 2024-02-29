@@ -26,7 +26,7 @@ export default function AboutMe(props) {
             />
             <span className="text-secondary font-Header text-sm  sm:text-xl">
               {" "}
-              01.
+              02.
             </span>
             <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
               About Me
@@ -40,11 +40,13 @@ export default function AboutMe(props) {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Welcome to Mernist. I&apos;m a firm believer that passion knows
-                no bounds, and my journey from a BBA graduate to a seasoned tech
-                enthusiast is a testament to that belief. While my academic
-                background may have been rooted in business administration, my
-                heart was always drawn to the ever-evolving realm of technology.
+                <span className="text-secondary">Welcome to Mernist </span>
+                I&apos;m a firm believer that passion knows no bounds, and my
+                journey from a is a testament to that belief. While my academic
+                background may have been rooted in{" "}
+                <span className="text-secondary ">BBA graduate</span> to a
+                seasoned tech enthusiast business administration, my heart was
+                always drawn to the ever-evolving realm of technology.
               </span>
             </div>
             <div className="font-Header ">
@@ -60,9 +62,9 @@ export default function AboutMe(props) {
             </div>
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Over the past two years, I&apos;ve had the privilege of diving
-                deep into the world of development, specializing primarily in
-                the
+                Over the past <span className="text-secondary">two years</span>, I&apos;ve had the
+                privilege of diving deep into the world of development,
+                specializing primarily in the
                 <span className="text-secondary"> MERN stack.</span>
                 This dynamic combination of technologies has allowed me to craft
                 robust and scalable solutions that seamlessly integrate

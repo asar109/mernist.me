@@ -27,7 +27,7 @@ module.exports = {
         primary: "#191919",
         secondary: "#E3651D",
         error: "#750E21",
-        tertiary: "#BED754",
+        tertiary: "#333",
         ResumeButtonHover: "#333",
         MobileNavBarColor: "#222",
         StartupBackground: "#333",

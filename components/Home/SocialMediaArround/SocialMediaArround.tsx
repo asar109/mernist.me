@@ -1,4 +1,4 @@
-import { motion } from "../../../node_modules/framer-motion";
+import { motion } from "framer-motion";
 import Facebook from "../../Icons/Facebook";
 import GithubIcon from "../../Icons/GithubIcon";
 import LinkedinIcon from "../../Icons/LinkedinIcon";

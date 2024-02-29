@@ -5,7 +5,7 @@ import { cn } from "../../../lib/utils";
 
 const font = Slackey({ weight: "400", subsets: ["latin"] });
 
-export default function Logo(props: { finishedLoading: boolean }) {
+export default function Logo() {
   return (
     <>
       <motion.div
@@ -13,8 +13,7 @@ export default function Logo(props: { finishedLoading: boolean }) {
         animate={{ y: 0, opacity: 1 }}
         transition={{
           type: "spring",
-          y: { delay: props.finishedLoading ? 0 : 8, duration: 0 },
-          opacity: { delay: props.finishedLoading ? 0 : 8, duration: 0 },
+          opacity: { delay: 5, duration: 0 },
         }}
         className=" relative h-12 w-10 "
       >

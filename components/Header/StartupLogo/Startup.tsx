@@ -1,5 +1,7 @@
-import { motion } from "../../../node_modules/framer-motion";
-const Startup = (props) => {
+import { motion } from "framer-motion";
+
+
+const Startup = () => {
   let WidthBy2 = 0;
   let HeightBy2 = 0;
   let greaterThanSmall = false;
@@ -18,8 +20,8 @@ const Startup = (props) => {
     <motion.div
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
-      transition={{ opacity: { delay: 4.9, duration: 0 } }}
-      className="absolute h-full w-full flex justify-center items-center bg-StartupBackground"
+      transition={{ opacity: { delay: 4.9, duration: 0   } }}
+      className="absolute h-full w-full flex justify-center items-center bg-primary"
     >
       <motion.div
         initial={{ opacity: 0, x: 0, y: 0, scale: "100%" }}

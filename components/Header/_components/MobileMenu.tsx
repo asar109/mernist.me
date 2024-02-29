@@ -22,7 +22,7 @@ const MobileMenu = props => {
         justify-center items-center space-y-8 font-sans"
         >
           <Link
-            to="aboutSection"
+            to="home"
             spy={true}
             smooth={true}
             offset={-50}
@@ -35,24 +35,24 @@ const MobileMenu = props => {
               className="text-white font-Text2 text-sm sm:text-base
              hover:text-secondary hover:cursor-pointer duration-300"
             >
-              About
+              Home
             </span>
           </Link>
           <Link
-            to="WhereIhaveWorkedSection"
+            to="aboutSection"
             spy={true}
             smooth={true}
-            offset={-250}
+            offset={-50}
             duration={200}
             onClick={() => closeMenu()}
             className="flex flex-col text-center space-y-2"
           >
-            <span className="text-secondary text-xs font-mono hover:cursor-pointer">02.</span>
+            <span className="text-secondary text-xs font-mono">02.</span>
             <span
               className="text-white font-Text2 text-sm sm:text-base
              hover:text-secondary hover:cursor-pointer duration-300"
             >
-              Experience
+              About
             </span>
           </Link>
           <Link

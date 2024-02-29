@@ -2,7 +2,7 @@ import React from "react";
 import GithubIcon from "../Icons/GithubIcon";
 import LinkedinIcon from "../Icons/LinkedinIcon";
 import InstagramIcon from "../Icons/InstagramIcon";
-import YoutubeIcon from "../Icons/YoutubeIcon";
+
 const ClickableIcon = props => {
   return (
     <a href={props.href} className="" target={"_blank"} rel="noreferrer">
@@ -14,7 +14,6 @@ const IconsData = [
   { href: "https://github.com/hktitof", Icon: GithubIcon },
   { href: "https://www.linkedin.com/in/mernist-nothing/", Icon: LinkedinIcon },
   { href: "https://www.instagram.com/titof_abdo/", Icon: InstagramIcon },
-  { href: "https://www.youtube.com/@mernist_nothing", Icon: YoutubeIcon },
 ];
 
 export default function Fotter(props: { githubUrl: string; hideSocialsInDesktop: boolean }) {

@@ -1,11 +1,11 @@
-import React from "react";
-import Img from "../../../components/smallComp/image/Img";
 import ArrowIcon from "../../../components/Icons/ArrowIcon";
+import Img from "../../../components/smallComp/image/Img";
 export default function AboutMe(props) {
   const technologies = [
     ["Next.js", "JavaScript (ES6+)", "Tailwind CSS", "React.js", "Prisma"],
     ["Nginx", "Node.js", "TypeScript", "Framer Motion", "React Native"],
   ];
+
   return (
     <div
       id="aboutSection"
@@ -118,30 +118,30 @@ export default function AboutMe(props) {
           <div className="group relative lg:w-96 lg:h-96 md:w-72 md:h-72 md:block hidden ">
             <div
               className="group-hover:translate-x-3 group-hover:translate-y-3
-               duration-300 absolute w-5/6 h-5/6 border-2 border-secondary translate-x-5 
+               duration-300 absolute w-5/6 h-[130%] border-2 border-secondary translate-x-5 
                translate-y-5 rounded"
             ></div>
 
-            <div className="absolute w-5/6 h-5/6  rounded overflow-hidden">
+            <div className="absolute w-5/6  rounded overflow-hidden">
               <div className="absolute w-full h-full group-hover:opacity-0 bg-secondary opacity-10 duration-300 rounded overflow-hidden"></div>
               <Img
-                src={"/img/Portfolio-portrait-3.jpg"}
+                src={"/img/asar_ahmed_profile.jpg"}
                 className={"object-contain rounded-lg"}
                 alt="My Image Not Found"
               />
             </div>
           </div>
           {/* // ?Image in Mobile */}
-          <div className=" relative w-full h-48 md:hidden  flex justify-center items-center">
-            <div className="absolute w-48 h-full  rounded  translate-x-5 translate-y-5 border-2 border-secondary"></div>
-            <div className="absolute w-48 h-full rounded overflow-hidden">
+          <div className=" relative w-full h-96 md:hidden  flex justify-center items-center">
+            <div className="absolute w-72 h-full  rounded  translate-x-5 translate-y-5 border-2 border-secondary"></div>
+            <div className="absolute w-72 h-full rounded overflow-hidden">
               <Img
-                src={"/img/Portfolio-portrait-3.jpg"}
-                className={"object-contain rounded-lg"}
+                src={"/img/asar_ahmed_profile.jpg"}
+                className={"object-contain  rounded-lg"}
                 alt="My Image Not Found"
               />
             </div>
-            <div className="absolute w-48 h-full  bg-secondary opacity-10 md:opacity-60  rounded overflow-hidden"></div>
+            <div className="absolute w-72 h-full  bg-secondary opacity-10 md:opacity-60  rounded overflow-hidden"></div>
           </div>
         </div>
       </div>

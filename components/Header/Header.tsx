@@ -12,7 +12,6 @@ const Header = (props: { finishedLoading: boolean; sectionsRef }) => {
   const [rotate, setRotate] = useState<boolean>(false);
   const context = useContext(AppContext);
   const scrollSizeY = useRef<number>(0);
-
   // Define the EventListener for the NavBar
   useEffect(() => {
     if (context.sharedState.portfolio.NavBar.IntervalEvent == null) {
@@ -33,7 +32,6 @@ const Header = (props: { finishedLoading: boolean; sectionsRef }) => {
             scrollSizeY.current = window.scrollY;
           }
         }
-        console.log("Scrolling checking for NavBar ", scrollSizeY.current);
       };
     }
   }, [
@@ -110,15 +108,23 @@ const Header = (props: { finishedLoading: boolean; sectionsRef }) => {
           </motion.h3>
         </div>
 
-        <IconMenu
-          rotate={rotate}
-          setRotate={setRotate}
-          setShowElement={setShowElement}
-          ShowElement={ShowElement}
-          finishedLoading={props.finishedLoading}
-        />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            opacity: { delay: 5, duration: 1 },
+          }}
+        >
+          <IconMenu
+            rotate={rotate}
+            setRotate={setRotate}
+            setShowElement={setShowElement}
+            ShowElement={ShowElement}
+            finishedLoading={props.finishedLoading}
+          />
+        </motion.div>
 
-        {/* ? Desktop Menu by Titof */}
+        {/* ? Desktop Menu */}
         <DesktopMenu finishedLoading={props.finishedLoading} />
       </motion.div>
     </>

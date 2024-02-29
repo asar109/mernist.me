@@ -86,7 +86,7 @@ const Header = (props: { finishedLoading: boolean; sectionsRef }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
-          opacity: { delay: 0, duration: 0 ,},
+          opacity: { delay: 0, duration: 0 },
         }}
         className={`w-full fixed ${
           ShowElement ? `bg-opacity-70 shadow-md` : `bg-opacity-0 `
@@ -95,18 +95,17 @@ const Header = (props: { finishedLoading: boolean; sectionsRef }) => {
       >
         {/* Logo Mernist */}
         <div className="flex justify-start items-center">
-          <Logo/>
+          <Logo />
           <motion.h3
-            
-            
             initial={{ x: 60, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{
               type: "spring",
-              opacity: { delay: 5, duration: 1 },
+              delay: 5,
+              duration: 1,
             }}
-            
-            className="ml-1 tracking-wide font-semibold text-secondary">
+            className="ml-1 tracking-wide font-semibold text-secondary"
+          >
             Mernist
           </motion.h3>
         </div>

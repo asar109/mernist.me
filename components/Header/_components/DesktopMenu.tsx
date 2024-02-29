@@ -3,6 +3,7 @@ import React from "react";
 import { Link as ReactScrollLink } from "react-scroll";
 
 export default function DesktopMenu(props: { finishedLoading: boolean }) {
+
   return (
     <div className="font-mono text-xs md:flex hidden flex-row items-center space-x-8 ">
       <motion.div
@@ -16,8 +17,8 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         }}
         transition={{
           type: "spring",
-          duration: props.finishedLoading ? 0 : 1.2,
-          delay: props.finishedLoading ? 0 : 9.4,
+          duration: 1.2,
+          delay: 5,
         }}
         className=" text-secondary"
       >
@@ -45,8 +46,8 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         }}
         transition={{
           type: "spring",
-          duration: props.finishedLoading ? 0 : 1.2,
-          delay: props.finishedLoading ? 0 : 9.7,
+          duration: 1.2,
+          delay:5.3,
         }}
         className="text-secondary"
       >
@@ -74,8 +75,8 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         }}
         transition={{
           type: "spring",
-          duration: props.finishedLoading ? 0 : 1.2,
-          delay: props.finishedLoading ? 0 : 9.8,
+          duration: 1.2,
+          delay: 5.5,
         }}
         className="text-secondary"
       >
@@ -103,8 +104,8 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         }}
         transition={{
           type: "spring",
-          duration: props.finishedLoading ? 0 : 1.2,
-          delay: props.finishedLoading ? 0 : 10,
+          duration: 1.2,
+          delay: 5.7,
         }}
         className="text-secondary"
       >
@@ -133,8 +134,8 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
           }}
           transition={{
             type: "spring",
-            duration: props.finishedLoading ? 0 : 1.2,
-            delay: props.finishedLoading ? 0 : 10.2,
+            duration: 1.2,
+            delay: 5.9,
           }}
           // onClick={()=>{router.push("/resume.pdf")}}
           className="text-secondary border border-spacing-2 py-2 px-3 rounded-sm border-secondary hover:bg-ResumeButtonHover"

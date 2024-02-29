@@ -1,15 +1,11 @@
-
+import { motion } from "framer-motion";
 import { useContext, useEffect, useRef, useState } from "react";
 import AppContext from "../AppContextFolder/AppContext";
 import DesktopMenu from "./_components/DesktopMenu";
 import IconMenu from "./_components/IconMenu";
 import Logo from "./_components/Logo";
 import MobileMenu from "./_components/MobileMenu";
-import { motion } from "framer-motion";
 
-const addClass = (ref: any, myclass: string) => {
-  ref.current?.classLIst.add(myclass);
-};
 const Header = (props: { finishedLoading: boolean; sectionsRef }) => {
   const RefNavBar = useRef<HTMLDivElement>(null);
   const [ShowElement, setShowElement] = useState(false);
@@ -66,10 +62,8 @@ const Header = (props: { finishedLoading: boolean; sectionsRef }) => {
   useEffect(() => {
     setTimeout(() => {
       setShowElement(true);
-    }, 10400);
+    }, 6000);
   }, []);
-
-  console.log("rotate from header : ", rotate);
   //veify document for serverSide rendering
   if (typeof document !== "undefined") {
     rotate
@@ -91,21 +85,31 @@ const Header = (props: { finishedLoading: boolean; sectionsRef }) => {
         ref={RefNavBar}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        // changed from 10.4 to 1
         transition={{
-          opacity: { delay: props.finishedLoading ? 0 : 9.4, duration: 0 },
+          opacity: { delay: 0, duration: 0 ,},
         }}
         className={`w-full fixed ${
-          ShowElement ? `bg-opacity-70 shadow-xl` : `bg-opacity-0 `
+          ShowElement ? `bg-opacity-70 shadow-md` : `bg-opacity-0 `
         } bg-primary flex 
       justify-between px-6 sm:px-12 py-2 sm:py-4  transition duration-4000 translate-y-0 z-20`}
       >
-        {/* Logo A */}
+        {/* Logo Mernist */}
         <div className="flex justify-start items-center">
-          <Logo finishedLoading={props.finishedLoading} />
-          <h3 className="ml-1 text-secondary">Mernist</h3>
+          <Logo/>
+          <motion.h3
+            
+            
+            initial={{ x: 60, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              type: "spring",
+              opacity: { delay: 5, duration: 1 },
+            }}
+            
+            className="ml-1 tracking-wide font-semibold text-secondary">
+            Mernist
+          </motion.h3>
         </div>
-        {/* Hide icon Designed by me */}
 
         <IconMenu
           rotate={rotate}

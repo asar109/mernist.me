@@ -13,7 +13,8 @@ export default function Logo() {
         animate={{ y: 0, opacity: 1 }}
         transition={{
           type: "spring",
-          opacity: { delay: 5, duration: 0 },
+          delay: 5,
+          duration: 1,
         }}
         className=" relative h-12 w-10 "
       >

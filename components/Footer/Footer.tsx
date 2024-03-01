@@ -2,6 +2,7 @@ import React from "react";
 import GithubIcon from "../Icons/GithubIcon";
 import LinkedinIcon from "../Icons/LinkedinIcon";
 import InstagramIcon from "../Icons/InstagramIcon";
+import Facebook from "../Icons/Facebook";
 
 const ClickableIcon = props => {
   return (
@@ -11,9 +12,12 @@ const ClickableIcon = props => {
   );
 };
 const IconsData = [
-  { href: "https://github.com/hktitof", Icon: GithubIcon },
-  { href: "https://www.linkedin.com/in/mernist-nothing/", Icon: LinkedinIcon },
-  { href: "https://www.instagram.com/titof_abdo/", Icon: InstagramIcon },
+  { href: "https://github.com/asar109", Icon: GithubIcon },
+  {
+    href: "https://www.linkedin.com/in/asar-ahmed-b0781120b",
+    Icon: LinkedinIcon,
+  },
+  { href: "https://www.facebook.com/themernsit", Icon: Facebook },
 ];
 
 export default function Fotter(props: { githubUrl: string; hideSocialsInDesktop: boolean }) {
@@ -31,12 +35,12 @@ export default function Fotter(props: { githubUrl: string; hideSocialsInDesktop:
     text-sm  space-y-2  "
         >
           <span className="group-hover:text-secondary sm:text-sm text-xs">
-            Built by nothing mernist
+            Built by Mernist
           </span>
 
           <span className="text-xs flex flex-row items-center space-x-2 group-hover:text-secondary">
             <GithubIcon className={"w-4 h-4 text-gray-400 fill-current group-hover:text-secondary"} />
-            <span className="">Source code - Github</span>
+            <span className="">Visit - Github</span>
           </span>
         </div>
       </a>

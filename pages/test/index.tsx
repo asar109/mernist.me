@@ -20,7 +20,7 @@ const Startup = () => {
   return (
     <motion.div
       initial={{ opacity: 1 }}
-      animate={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       transition={{ opacity: { delay: 4.9, duration: 0 } }}
       className="absolute h-full w-full flex justify-center items-center bg-StartupBackground"
     >

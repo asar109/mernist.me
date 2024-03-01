@@ -103,7 +103,7 @@ export default function SomethingIveBuilt() {
                   I developed a suite of AI tools for content creation. Using{" "}
                   <span className="text-secondary">Next.js</span>{" "}
                   <span className="text-secondary">Prisma</span>, {""} and{" "}
-                  <span className="text-secondary">Clerk</span> for
+                  <span className="text-secondary">Clerk auth</span> for
                   authentication, I integrated{" "}
                   <span className="text-secondary">Rapid</span> and{" "}
                   <span className="text-secondary">Replicate</span> API for AI
@@ -122,7 +122,7 @@ export default function SomethingIveBuilt() {
                 <span className="pr-4 z-10">Next.Js</span>
                 <span className="pr-4 z-10">Prisma</span>
                 <span className="pr-4 z-10">Stripe</span>
-                <span className="pr-4 z-10">Clerk</span>
+                <span className="pr-4 z-10">Clerk auth</span>
                 <span className="pr-4 z-10">Nginx</span>
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">

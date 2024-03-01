@@ -18,7 +18,6 @@ export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const homeRef = useRef<HTMLDivElement>(null);
 
-
   useEffect(() => {
     // remove the interval Cookie timer setter when
     clearInterval(context.sharedState.userdata.timerCookieRef.current);
@@ -57,17 +56,50 @@ export default function Home() {
 
   useEffect(() => {
     Aos.init({ duration: 2000, once: true });
+
+    // disbale context menu on ctrl shift I shortcut
   }, []);
 
-  const meta = {
-    title: "Mernist | Full Stack Developer",
-    description: `I'm a Full Stack Developer, I build websites and web applications. I'm a MERN stack developer, I use MongoDB, Express, React and Node.js to build web applications`,
-    image: "/titofCercle.png",
-    type: "website",
-  };
+  useEffect(() => {
+    const handleContextMenu = (event) => {
+      // Check if Ctrl + Shift + I is pressed
+      if (event.ctrlKey && event.shiftKey && event.keyCode === 73) {
+        event.preventDefault(); // Prevent the default context menu
+      }
+    };
+
+    const handleKeyDown = (event) => {
+      // Check if Ctrl + Shift + I is pressed
+      if (event.ctrlKey && event.shiftKey && event.keyCode === 73) {
+        event.preventDefault(); // Prevent the default behavior (opening console)
+      }
+    };
+
+    // Add event listeners when component mounts
+    document.addEventListener("contextmenu", handleContextMenu);
+    document.addEventListener("keydown", handleKeyDown);
+
+    // Remove event listeners when component unmounts
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []); //
+
+ const meta = {
+   title: "Mernist | Asar Ahmed",
+   description: `I'm a Full Stack Developer, specialized in MERN stack. I create robust web applications using MongoDB, Express, React, and Node.js.`,
+  //  image: "/titofCercle.png", :TODO
+   type: "website",
+ };
+
 
   return (
-    <>
+    <div
+      onContextMenu={(e) => {
+        e.preventDefault();
+      }}
+    >
       <Head>
         <title>{meta.title}</title>
       </Head>
@@ -92,18 +124,17 @@ export default function Home() {
         ) : (
           <></>
         )}
-        {/* {context.sharedState.finishedLoading ? <WhereIHaveWorked /> : <></>} */}
         {context.sharedState.finishedLoading ? <SomethingIveBuilt /> : <></>}
         {context.sharedState.finishedLoading ? <GetInTouch /> : <></>}
         {context.sharedState.finishedLoading ? (
           <Footer
-            githubUrl={"https://github.com/hktitof/my-website"}
+            githubUrl={"https://github.com/asar109"}
             hideSocialsInDesktop={true}
           />
         ) : (
           <></>
         )}
       </div>
-    </>
+    </div>
   );
 }

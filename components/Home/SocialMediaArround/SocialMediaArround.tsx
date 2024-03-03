@@ -38,11 +38,12 @@ export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
       >
         <div className="flex flex-col space-y-8 justify-center items-center">
           <div className="flex flex-col justify-center items-center space-y-5">
-            {/* Github Icon */}
+            {/* Facebook */}
             <IconClickableWithAnimation
               Icon={Facebook}
               href={"https://www.facebook.com/themernsit"}
-            />
+              />
+              {/* Github Icon */}
             <IconClickableWithAnimation
               Icon={GithubIcon}
               href={"https://github.com/asar109"}

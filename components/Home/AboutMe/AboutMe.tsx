@@ -127,7 +127,7 @@ export default function AboutMe(props) {
             <div className="absolute w-5/6  rounded overflow-hidden">
               <div className="absolute w-full h-full group-hover:opacity-0 bg-secondary opacity-10 duration-300 rounded overflow-hidden"></div>
               <Img
-                src={"/img/asar_ahmed_profile.jpg"}
+                src={"/img/asar_ahmed_profile.JPG"}
                 className={"object-contain rounded-lg"}
                 alt="My Image Not Found"
               />
@@ -135,15 +135,15 @@ export default function AboutMe(props) {
           </div>
           {/* // ?Image in Mobile */}
           <div className=" relative w-full h-96 md:hidden  flex justify-center items-center">
-            <div className="absolute w-72 h-full  rounded  translate-x-5 translate-y-5 border-2 border-secondary"></div>
-            <div className="absolute w-72 h-full rounded overflow-hidden">
+            <div className="absolute w-56 h-full  rounded  translate-x-5 translate-y-3 border-2 border-secondary"></div>
+            <div className="absolute w-60 h-full rounded overflow-hidden">
               <Img
-                src={"/img/asar_ahmed_profile.jpg"}
+                src={"/img/asar_ahmed_profile.JPG"}
                 className={"object-contain  rounded-lg"}
                 alt="My Image Not Found"
               />
             </div>
-            <div className="absolute w-72 h-full  bg-secondary opacity-10 md:opacity-60  rounded overflow-hidden"></div>
+            <div className="absolute w-60 h-full  bg-secondary opacity-10 md:opacity-60  rounded overflow-hidden"></div>
           </div>
         </div>
       </div>

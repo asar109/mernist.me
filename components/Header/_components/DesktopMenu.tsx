@@ -30,7 +30,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
           duration={200}
         >
           &gt; 01.{" "}
-          <span className="text-white hover:cursor-pointer hover:text-secondary duration-300">
+          <span className="text-white tracking-wider hover:cursor-pointer hover:text-secondary duration-300">
             Home
           </span>
         </ReactScrollLink>
@@ -59,7 +59,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
           duration={200}
         >
           &gt; 02.{" "}
-          <span className="text-white hover:cursor-pointer hover:text-secondary duration-300">
+          <span className="text-white tracking-wider hover:cursor-pointer hover:text-secondary duration-300">
             About
           </span>
         </ReactScrollLink>
@@ -88,7 +88,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
           duration={200}
         >
           &gt; 03.{" "}
-          <span className="text-white  hover:cursor-pointer hover:text-secondary duration-300">
+          <span className="text-white tracking-wider hover:cursor-pointer hover:text-secondary duration-300">
             Work
           </span>
         </ReactScrollLink>
@@ -117,7 +117,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
           duration={200}
         >
           &gt; 04.{" "}
-          <span className="text-white  hover:cursor-pointer hover:text-secondary duration-300">
+          <span className="text-white tracking-wider  hover:cursor-pointer hover:text-secondary duration-300">
             Contact
           </span>
         </ReactScrollLink>
@@ -138,7 +138,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
             delay: 5.9,
           }}
           // onClick={()=>{router.push("/resume.pdf")}}
-          className="text-secondary border border-spacing-2 py-2 px-3 rounded-sm border-secondary hover:bg-ResumeButtonHover"
+          className="text-secondary tracking-wider font-semibold border border-spacing-2 py-2 px-3 rounded-sm border-secondary hover:bg-ResumeButtonHover"
         >
           Resume
         </motion.button>

@@ -121,9 +121,9 @@ export default function SomethingIveBuilt() {
               >
                 <span className="pr-4 z-10">Next.Js</span>
                 <span className="pr-4 z-10">Prisma</span>
+                <span className="pr-4 z-10">My SQL</span>
                 <span className="pr-4 z-10">Stripe</span>
                 <span className="pr-4 z-10">Clerk auth</span>
-                <span className="pr-4 z-10">Nginx</span>
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">
                 <a
@@ -160,9 +160,9 @@ export default function SomethingIveBuilt() {
                 ></div>
               </a>
               <Img
-                src={"/img/YPredict-v1.jpg"}
+                src={"/projects/discord.PNG"}
                 alt={"Project Screen shot"}
-                className={`w-full rounded h-full `}
+                className={`w-full  rounded h-full `}
               />
             </div>
           </div>
@@ -175,7 +175,7 @@ export default function SomethingIveBuilt() {
                 <div className="absolute w-full h-full bg-secondary opacity-10 z-10"></div>
                 <div className="absolute w-full h-full bg-primary opacity-80 z-10"></div>
                 <Img
-                  src={"/hackme.jpg"}
+                  src={"/projects/discord.PNG"}
                   alt={"Project Screen shot"}
                   className={`w-full h-full`}
                 />
@@ -194,30 +194,34 @@ export default function SomethingIveBuilt() {
                   rel="noopener noreferrer"
                 >
                   <span className=" md:text-gray-200 text-secondary font-bold text-xl hover:cursor-pointer">
-                    YPredict - v1
+                    Discord clone
                   </span>
                 </a>
               </div>
               <div className="w-full md:bg-tertiary rounded-md py-6 md:p-6  z-10">
                 <p className="text-gray-300 md:text-gray-400 text-left ">
-                  I had the opportunity to lead the development of a token
-                  project, which aimed to create a decentralized ecosystem for
-                  peer-to-peer transactions. Overseeing the planning and
-                  development of the project, including the{" "}
-                  <span className="text-secondary"> design</span> and
-                  implementation of the{" "}
-                  <span className="text-secondary"> smart contract</span> and{" "}
-                  <span className="text-secondary"> blockchain technology</span>
-                  . Here i share with you{" "}
-                  <span className="text-secondary"> YPredict - v1 </span> for
-                  the private sale.
+                  I engineered a dynamic Discord clone, empowering users to
+                  create servers and manage member access effortlessly. Within
+                  each server, three distinct channel types—
+                  <span className="text-secondary">text</span>,{" "}
+                  <span className="text-secondary">voice</span>, and{" "}
+                  <span className="text-secondary">video</span>—facilitate
+                  seamless communication. Leveraging{" "}
+                  <span className="text-secondary">Socket.IO</span> for
+                  real-time messaging, users engage in instant conversations. In
+                  the absence of{" "}
+                  <span className="text-secondary">Socket.IO</span> support, a
+                  fallback mechanism ensures continuous functionality. This
+                  project underscores my proficiency in building interactive web
+                  applications, prioritizing user experience and real-time
+                  communication.
                 </p>
               </div>
               <ul
                 className="flex flex-wrap w-full text-gray-300 md:text-gray-400
                text-sm font-Text2 md:justify-start"
               >
-                <span className="pr-4 z-10">Token</span>
+                <span className="pr-4 z-10">Next.js</span>
                 <span className="pr-4 z-10">ERC20</span>
                 <span className="pr-4 z-10">Nextjs</span>
                 <span className="pr-4 z-10">Smart contract</span>
@@ -236,366 +240,7 @@ export default function SomethingIveBuilt() {
             </div>
           </div>
         </div>
-        {/* // ?  Project  3*/}
-        <div
-          data-aos="fade-up"
-          className="relative md:grid md:grid-cols-12 w-full md:h-96 "
-        >
-          {/* Left image */}
-          <div
-            className="hidden bg-primary z-10  py-4 
-          absolute md:grid grid-cols-12 w-full h-full  content-center"
-          >
-            <div className="relative rounded w-full h-full col-span-7 ">
-              <Link href={"/typing"}>
-                <div
-                  // onClick={}
-                  className="absolute w-full h-full rounded bg-secondary 
-           transition-opacity opacity-10 hover:opacity-0 hover:cursor-pointer duration-300"
-                ></div>
-              </Link>
 
-              <Img
-                src={"/typing.png"}
-                alt={"Project Screen shot"}
-                className={`w-full rounded h-full `}
-              />
-            </div>
-          </div>
-
-          {/* right Content */}
-          <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
-            {/* background for text in mobile responsive */}
-            <div className="absolute w-full h-full bg-opacity-70 z-0">
-              <div className="relative w-full h-full">
-                <div className="absolute w-full h-full bg-secondary opacity-10 z-10"></div>
-                <div className="absolute w-full h-full bg-primary opacity-80 z-10"></div>
-                <Img
-                  src={"/typing.png"}
-                  alt={"Project Screen shot"}
-                  className={`w-full h-full `}
-                />
-              </div>
-            </div>
-
-            <div
-              className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6 xl:col-start-7 col-start-5 
-            col-span-8 flex flex-col items-start md:items-end space-y-3"
-            >
-              <div className="flex flex-col space-y-1 md:items-end z-10">
-                <span className="text-secondary text-base">Recent Project</span>
-                <Link href={"/typing"}>
-                  <span className=" md:text-gray-200 text-secondary font-bold text-xl hover:cursor-pointer">
-                    Speed Typing
-                  </span>
-                </Link>
-              </div>
-              <div className="w-full md:bg-tertiary rounded-md py-6 md:p-6  z-10">
-                <p className="text-gray-300 md:text-gray-400 text-left md:text-right">
-                  This project aim to help you to improve your{" "}
-                  <span className="text-secondary"> typing </span> by tracking
-                  your progress in{" "}
-                  <span className="text-secondary"> each round</span> and give
-                  you a <span className="text-secondary"> score</span> based on
-                  your typing speed and accuracy through a table of{" "}
-                  <span className="text-secondary"> statistics</span>.
-                </p>
-              </div>
-              <ul
-                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
-               text-sm font-Text2 md:justify-end"
-              >
-                <span className="pr-4 z-10">Algorithms</span>
-                <span className="pr-4 z-10">Framer Motion</span>
-                <span className="pr-4 z-10">Tailwind CSS</span>
-                <span className="pr-4 z-10">TypeScript</span>
-              </ul>
-              <div className="z-10 flex fle-row space-x-5 ">
-                <GithubIcon link="https://github.com/hktitof/Typing" />
-                <ExternalLink url={"typing"} router={router} />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* // ?  Project 4 */}
-        <div
-          data-aos="fade-up"
-          className="relative md:grid md:grid-cols-12 w-full md:h-96  "
-        >
-          {/* Left image */}
-          <div
-            className="hidden bg-primary z-10  py-4 
-          absolute md:grid grid-cols-12 w-full h-full  content-center "
-          >
-            <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
-              <Link href={"/userdatapuller"}>
-                <div
-                  className="absolute w-full h-full rounded bg-secondary 
-           transition-opacity opacity-10 hover:opacity-0 hover:cursor-pointer duration-300"
-                ></div>
-              </Link>
-              <Img
-                src={"/hackme.jpg"}
-                alt={"Project Screen shot"}
-                className={`w-full rounded h-full `}
-              />
-            </div>
-          </div>
-
-          {/* right Content */}
-          <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
-            {/* background for text in mobile responsive */}
-            <div className="absolute w-full h-full bg-opacity-70 z-0 md:order-2">
-              <div className="relative w-full h-full">
-                <div className="absolute w-full h-full bg-secondary opacity-10 z-10"></div>
-                <div className="absolute w-full h-full bg-primary opacity-80 z-10"></div>
-                <Img
-                  src={"/hackme.jpg"}
-                  alt={"Project Screen shot"}
-                  className={`w-full h-full`}
-                />
-              </div>
-            </div>
-
-            <div
-              className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6   
-            col-span-8 flex flex-col items-start  space-y-3 md:order-1"
-            >
-              <div className="flex flex-col space-y-1  z-10">
-                <span className="text-secondary text-base">Recent Project</span>
-                <Link href={"/userdatapuller"}>
-                  <span className=" md:text-gray-200 text-secondary font-bold text-xl hover:cursor-pointer">
-                    User Data puller
-                  </span>
-                </Link>
-              </div>
-              <div className="w-full md:bg-tertiary rounded-md py-6 md:p-6  z-10">
-                <p className="text-gray-300 md:text-gray-400 text-left ">
-                  This project allows you to understand how easy it is to
-                  identify and track your browser based on how it appears to
-                  websites. Such as your
-                  <span className="text-secondary"> location</span>,{" "}
-                  <span className="text-secondary">IP Address</span>,{" "}
-                  <span className="text-secondary">
-                    {","} software, Hardware
-                  </span>{" "}
-                  and some additional information with the help of cookies.
-                </p>
-              </div>
-              <ul
-                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
-               text-sm font-Text2 md:justify-start"
-              >
-                <span className="pr-4 z-10">Cookies</span>
-                <span className="pr-4 z-10">Google APi</span>
-                <span className="pr-4 z-10">Data collecting</span>
-                <span className="pr-4 z-10">IP Address</span>
-                <span className="pr-4 z-10">Location</span>
-              </ul>
-              <div className="z-10 flex fle-row space-x-5 ">
-                <GithubIcon link="https://github.com/hktitof/DataPuller" />
-                <ExternalLink url={"/userdatapuller"} router={router} />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* // ? Project 5 */}
-        <div
-          data-aos="fade-up"
-          className="relative md:grid md:grid-cols-12 w-full md:h-96"
-        >
-          {/* Left image */}
-          <div
-            className="hidden bg-primary z-10  py-4 
-          absolute md:grid grid-cols-12 w-full h-full  content-center"
-          >
-            <div className="relative rounded w-full h-full col-span-7 ">
-              <a
-                href="https://www.haircut.ma"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <div
-                  // onClick={}
-                  className="absolute w-full h-full rounded bg-primary 
-           transition-opacity opacity-50 hover:opacity-0 hover:cursor-pointer duration-300"
-                ></div>
-              </a>
-
-              <div className="absolute px-2 bg-primary rounded  ml-4 mt-2 ">
-                <span className="text-secondary text-xl">In initiation...</span>
-              </div>
-
-              <Img
-                src={"/haircut.png"}
-                alt={"Project Screen shot"}
-                className={`w-full rounded h-full `}
-              />
-            </div>
-          </div>
-
-          {/* right Content */}
-          <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
-            {/* background for text in mobile responsive */}
-            <div className="absolute w-full h-full bg-opacity-70 z-0">
-              <div className="relative w-full h-full">
-                <div className="absolute w-full h-full bg-secondary opacity-10 z-10"></div>
-                <div className="absolute w-full h-full bg-primary opacity-80 z-10"></div>
-                <Img
-                  src={"/haircut.png"}
-                  alt={"Project Screen shot"}
-                  className={`w-full h-full `}
-                />
-              </div>
-            </div>
-            <div className="absolute w-full   rounded  ml-4 mt-2  text-end pr-8">
-              <div className="w-full"></div>
-              <span className="text-secondary sm:text-lg bg-primary px-2 py-1 rounded">
-                In initiation...
-              </span>
-            </div>
-            <div
-              className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6 xl:col-start-7 col-start-5 
-            col-span-8 flex flex-col items-start md:items-end sm:space-y-3 space-y-1"
-            >
-              <div className="flex flex-col space-y-1 md:items-end z-10">
-                <span className="text-secondary text-base">Recent Project</span>
-                <a
-                  href="https://www.haircut.ma"
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  <span className=" md:text-gray-200 text-secondary font-bold text-xl hover:cursor-pointer">
-                    Haircut Appointment
-                  </span>
-                </a>
-              </div>
-              <div className="w-full md:bg-tertiary rounded-md py-6 md:p-6  z-10">
-                <p className="text-gray-300 md:text-gray-400 text-left md:text-right">
-                  It&apos; a barber shop{" "}
-                  <span className="text-secondary">appointment scheduling</span>{" "}
-                  & management software it provides{" "}
-                  <span className="text-secondary">online scheduling</span>,
-                  appointment reminders,{" "}
-                  <span className="text-secondary">payments</span>, marketing,
-                  and much more! Currently in the{" "}
-                  <span className="text-secondary">Initiation phase</span>.
-                </p>
-              </div>
-              <ul
-                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
-               text-sm font-Text2 md:justify-end"
-              >
-                <span className="pr-4 z-10">Appointment</span>
-                <span className="pr-4 z-10">Management</span>
-                <span className="pr-4 z-10">Scheduling</span>
-                <span className="pr-4 z-10">Booking</span>
-              </ul>
-              <div className="z-10 flex fle-row space-x-5 sm:pt-0 pt-2">
-                <GithubIcon link="https://github.com/hktitof/haircut" />
-                <a
-                  href="https://www.haircut.ma"
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  <ExternalLink url={""} router={router} />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* // ?  Project 6 */}
-        <div
-          data-aos="fade-up"
-          className="relative md:grid md:grid-cols-12 w-full md:h-96  "
-        >
-          {/* Left image */}
-          <div
-            className="hidden bg-primary z-10  py-4 
-          absolute md:grid grid-cols-12 w-full h-full  content-center "
-          >
-            <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
-              <a
-                href="https://github.com/hktitof/CallCenter"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <div
-                  className="absolute w-full h-full rounded bg-primary 
-           transition-opacity opacity-60 hover:opacity-0 hover:cursor-pointer duration-300"
-                ></div>
-              </a>
-
-              <Img
-                src={"/CallCenter.png"}
-                alt={"Project Screen shot"}
-                className={`w-full rounded h-full `}
-              />
-            </div>
-          </div>
-
-          {/* right Content */}
-          <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
-            {/* background for text in mobile responsive */}
-            <div className="absolute w-full h-full bg-opacity-70 z-0 md:order-2">
-              <div className="relative w-full h-full">
-                <div className="absolute w-full h-full bg-primary opacity-50 z-10"></div>
-                <div className="absolute w-full h-full bg-primary opacity-80 z-10"></div>
-                <Img
-                  src={"/CallCenter.png"}
-                  alt={"Project Screen shot"}
-                  className={`w-full h-full`}
-                />
-              </div>
-            </div>
-
-            <div
-              className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6   
-            col-span-8 flex flex-col items-start  sm:space-y-3 md:order-1"
-            >
-              <div className="flex flex-col space-y-1  z-10">
-                <span className="text-secondary text-base">Recent Project</span>
-                <a
-                  href="https://github.com/hktitof/CallCenter"
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  <span className=" md:text-gray-200 text-secondary font-bold text-xl hover:cursor-pointer">
-                    Call Center Management System
-                  </span>
-                </a>
-              </div>
-              <div className="w-full md:bg-tertiary rounded-md py-6 md:p-6  z-10">
-                <p className="text-gray-300 md:text-gray-400 text-left ">
-                  A{" "}
-                  <span className="text-secondary">
-                    JavaFX call center management system
-                  </span>{" "}
-                  project it is used for receiving or transmitting a large
-                  volume of enquiries between the agent and the customer,it
-                  handles the communication between agents & clients it can be
-                  used for the both side client & agent side to handle the
-                  messages and issues.
-                </p>
-              </div>
-              <ul
-                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
-               text-sm font-Text2 md:justify-start"
-              >
-                <span className="pr-4 z-10">JavaFX</span>
-                <span className="pr-4 z-10">Java Concurrency</span>
-                <span className="pr-4 z-10">MultiThreading</span>
-                <span className="pr-4 z-10">MySQL</span>
-              </ul>
-              <div className="z-10 flex fle-row space-x-5 sm:pt-0 pt-2">
-                <GithubIcon link="https://github.com/hktitof/CallCenter" />
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

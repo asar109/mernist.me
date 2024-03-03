@@ -16,15 +16,15 @@
 }
 @layer utilities {
   body::-webkit-scrollbar {
-    width: 0.4em;
+    width: 0.42em;
     background-color: #1c1c1d;
+    border-radius: 16px;
   }
 
   body::-webkit-scrollbar-thumb {
     background-color: #E3651D;
     scrollbar-gutter: stable;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    border-radius: 16px;
   }
 }
 html,

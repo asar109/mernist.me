@@ -222,7 +222,7 @@ export default function SomethingIveBuilt() {
                text-sm font-Text2 md:justify-start"
               >
                 <span className="pr-4 z-10">Next.js</span>
-                <span className="pr-4 z-10">ERC20</span>
+                <span className="pr-4 z-10">Typescript</span>
                 <span className="pr-4 z-10">Nextjs</span>
                 <span className="pr-4 z-10">Smart contract</span>
                 <span className="pr-4 z-10">Blockchain</span>

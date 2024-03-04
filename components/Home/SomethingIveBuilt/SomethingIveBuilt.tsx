@@ -223,7 +223,7 @@ export default function SomethingIveBuilt() {
               >
                 <span className="pr-4 z-10">Next.js</span>
                 <span className="pr-4 z-10">Typescript</span>
-                <span className="pr-4 z-10">Nextjs</span>
+                <span className="pr-4 z-10">Prisma</span>
                 <span className="pr-4 z-10">Smart contract</span>
                 <span className="pr-4 z-10">Blockchain</span>
               </ul>

@@ -224,8 +224,8 @@ export default function SomethingIveBuilt() {
                 <span className="pr-4 z-10">Next.js</span>
                 <span className="pr-4 z-10">Typescript</span>
                 <span className="pr-4 z-10">Prisma</span>
-                <span className="pr-4 z-10">Smart contract</span>
-                <span className="pr-4 z-10">Blockchain</span>
+                <span className="pr-4 z-10">MySQL</span>
+                <span className="pr-4 z-10">Clerk Auth</span>
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">
                 <GithubIcon link="https://github.com/hktitof/Ypredict" />

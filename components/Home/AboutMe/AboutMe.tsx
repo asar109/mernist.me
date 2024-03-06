@@ -3,7 +3,7 @@ import Img from "../../../components/smallComp/image/Img";
 export default function AboutMe(props) {
   const technologies = [
     ["Next.js", "JavaScript (ES6+)", "Tailwind CSS", "React.js", "Prisma"],
-    ["Nginx", "Node.js", "TypeScript", "Framer Motion", "React Native"],
+    ["Socket.io", "Node.js", "TypeScript", "Framer Motion", "React Native"],
   ];
 
   return (

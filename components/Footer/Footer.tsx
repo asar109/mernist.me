@@ -34,13 +34,9 @@ export default function Fotter(props: { githubUrl: string; hideSocialsInDesktop:
           className="group flex flex-col font-mono justify-center items-center  text-gray-400 
     text-sm  space-y-2  "
         >
-          <span className="group-hover:text-secondary sm:text-sm text-xs">
-            Built by Mernist
-          </span>
 
           <span className="text-xs flex flex-row items-center space-x-2 group-hover:text-secondary">
-            <GithubIcon className={"w-4 h-4 text-gray-400 fill-current group-hover:text-secondary"} />
-            <span className="">Visit - Github</span>
+            Mernist.me
           </span>
         </div>
       </a>

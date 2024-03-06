@@ -413,13 +413,14 @@ export default function SomethingIveBuilt() {
                 <p className="text-gray-300 md:text-gray-400 text-left">
                   This landing page showcases a mobile app, featuring live
                   download counts and review statistics sourced from the Play
-                  Store. The website includes sections highlighting the app's{" "}
-                  <span className="text-secondary">features</span>,{" "}
+                  Store. The website includes sections highlighting the
+                  app&apos;s <span className="text-secondary">features</span>,{" "}
                   <span className="text-secondary">key facts</span>,{" "}
                   <span className="text-secondary">screenshots</span>, and a{" "}
                   <span className="text-secondary">download</span> section.
                   Developed using HTML, CSS, and JavaScript, it offers an
-                  immersive experience for users exploring the app's offerings.
+                  immersive experience for users exploring the app&apos;s
+                  offerings.
                 </p>
               </div>
               <ul

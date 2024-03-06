@@ -24,6 +24,7 @@ export default function SomethingIveBuilt() {
             {" "}
             03.
           </span>
+
           <span className=" font-bold tracking-wider text-gray-200 text-lg md:text-2xl w-44 md:w-56 opacity-85">
             {" "}
             Some Things I&apos;ve Built
@@ -335,6 +336,7 @@ export default function SomethingIveBuilt() {
                 <span className="pr-4 z-10">Clerk</span>
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">
+                <GithubIcon link="https://github.com/asar109/discord-mernist" />
                 <a
                   href="http://mernist.live/"
                   target={"_blank"}
@@ -369,7 +371,7 @@ export default function SomethingIveBuilt() {
                 ></div>
               </a>
               <Img
-                src={"/projects/Food-web.PNG"}
+                src={"/projects/landing-page.PNG"}
                 alt={"Project Screen shot"}
                 className={`w-full  rounded h-full `}
               />
@@ -384,7 +386,7 @@ export default function SomethingIveBuilt() {
                 <div className="absolute w-full h-full bg-secondary opacity-10 z-10"></div>
                 <div className="absolute w-full h-full bg-primary opacity-80 z-10"></div>
                 <Img
-                  src={"/projects/Food-web.PNG"}
+                  src={"/projects/landing-page.PNG"}
                   alt={"Project Screen shot"}
                   className={`w-full h-full`}
                 />

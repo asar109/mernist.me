@@ -10,7 +10,7 @@ export default function AboutMe(props) {
     <div
       id="aboutSection"
       data-aos="fade-up"
-      className="snap-start flex flex-col  items-center py-20 bg-primary"
+      className="snap-start flex flex-col  items-center pt-8 pb-36  bg-primary"
     >
       {/* // ? 0.1 About Me */}
       <div

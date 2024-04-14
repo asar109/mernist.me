@@ -4,7 +4,7 @@ export default function GetInTouch() {
     <div
       id="GetInTouchSection"
       data-aos="fade-up"
-      className="flex flex-col space-y-4 w-full h-96 items-center bg-primary"
+      className="flex flex-col mt-40  space-y-4 w-full h-96 items-center bg-primary"
     >
       {/* // ? Title === > What's Next?  */}
       <div className="flex flex-row items-center ">

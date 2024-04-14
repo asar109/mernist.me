@@ -85,7 +85,7 @@ export default function SomethingIveBuilt() {
             >
               <div className="flex flex-col space-y-1 md:items-end z-10">
                 <span className="text-secondary text-base">
-                  Samplegui <span className="text-xs">( Working )</span>
+                  Samplegui.international <span className="text-xs text-white">( Working )</span>
                 </span>
                 <a
                   href="https://sample-gui.vercel.app/"
@@ -100,14 +100,16 @@ export default function SomethingIveBuilt() {
               <div className="w-full md:bg-tertiary rounded-md py-6 md:p-6  z-10">
                 <p className="text-gray-300 md:text-gray-400 text-justify md:text-right ">
                   Currently, I&apos;m working on a Next.js project with{" "}
-                  <span className="text-secondary">Next UI</span>, creating a
+                  <span className="text-secondary">Shadcn UI</span>, creating a
                   visually stunning website with three key pages. The homepage
                   features captivating vectors and
                   <span className="text-secondary"> scrolling animations.</span>
                   The product page showcases animated tabs for different
                   products, blending aesthetics with functionality seamlessly.
                   Lastly, the contact page offers a beautifully designed form
-                  for effortless communication.
+                  for effortless communication.Additionally
+                  <span className="text-secondary"> Tawk.to</span> is integrated
+                  for live chat
                 </p>
               </div>
               <ul
@@ -115,8 +117,9 @@ export default function SomethingIveBuilt() {
                text-sm font-Text2 md:justify-end"
               >
                 <span className="pr-4 z-10">Next.Js</span>
-                <span className="pr-4 z-10">Next-UI</span>
-                <span className="pr-4 z-10">AOS</span>
+                <span className="pr-4 z-10">Shadcn UI</span>
+                <span className="pr-4 z-10">Tailwind CSS</span>
+                <span className="pr-4 z-10">Tawk.to</span>
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">
                 <a

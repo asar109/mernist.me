@@ -2,6 +2,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
 import { Fragment, useContext, useEffect, useRef, useState } from "react";
+import ReactGA from "react-ga";
 import AppContext from "../components/AppContextFolder/AppContext";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
@@ -55,6 +56,9 @@ export default function Home() {
   setTimeout(() => {}, 5000);
 
   useEffect(() => {
+    ReactGA.initialize(process.env.GA_ID);
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     Aos.init({ duration: 2000, once: true });
   }, []);
 
@@ -87,16 +91,12 @@ export default function Home() {
   const meta = {
     title: "Mernist | Asar Ahmed",
     description: `I'm a Full Stack Developer, specialized in MERN stack. I create robust web applications using MongoDB, Express, React, and Node.js.`,
-     image: "/logo_landscape.PNG", 
+    image: "/logo_landscape.PNG",
     type: "website",
   };
 
   return (
-    <Fragment
-    // onContextMenu={(e) => {
-    //   e.preventDefault();
-    // }}
-    >
+    <Fragment>
       <Head>
         <title>{meta.title}</title>
         <meta
@@ -107,21 +107,19 @@ export default function Home() {
         {/* <!-- Meta tags for SEO --> */}
         <meta
           name="description"
-          content="With over 2 years of experience, I specialize in cutting-edge technologies, including JavaScript, TypeScript, HTML, CSS, Socket.io, Prisma, Node.js, Firebase, MongoDB, MySQL, PostgreSQL, Next.js, React.js, React Native, Flutter, and more. Turn your digital ideas into reality with my diverse skill set and unwavering dedication to excellence."
+          content="With a rich tapestry of over 2 years of hands-on experience, I am a seasoned specialist in an extensive array of cutting-edge technologies. From the fundamental pillars of JavaScript, TypeScript, HTML, and CSS to the dynamic realms of Socket.io, Prisma, Node.js, Firebase, and beyond, my expertise spans a diverse spectrum. With proficiency in database management systems such as MongoDB, MySQL, and PostgreSQL, I am adept at architecting robust back-end solutions. Additionally, I bring to the table a deep understanding of modern frameworks and libraries, including Next.js, React.js and React Native enabling me to craft seamless and intuitive user experiences across web and mobile platforms. "
         />
         <meta
           name="keywords"
-          content="JavaScript, TypeScript, HTML, CSS, Socket.io, Prisma, Node.js, Firebase, MongoDB, MySQL, PostgreSQL, Next.js, React.js, React Native, Flutter, technology, innovation"
+          content="JavaScript, TypeScript, HTML, CSS, Socket.io, Prisma, Node.js, GraphQL, Tailwind CSS, Chakra UI,  Firebase, MongoDB, MySQL, PostgreSQL, Next.js, React.js, React Native, technology, innovation"
         />
+        <link rel="manifest" href="/manifest.json" />
 
         {/* <!-- Open Graph Meta Tags (for better social media sharing) --> */}
-        <meta
-          property="og:title"
-          content="Welcome to Mernist - Your Technology Partner"
-        />
+        <meta property="og:title" content="Mernist | Asar Ahmed" />
         <meta
           property="og:description"
-          content="With over 2 years of experience, I specialize in cutting-edge technologies. Turn your digital ideas into reality with my diverse skill set and unwavering dedication to excellence."
+          content="Turn your digital ideas into reality with my diverse skill set and unwavering dedication to excellence"
         />
         <meta property="og:image" content="/logo.png" />
         <meta property="og:url" content="https://mernist.me" />
@@ -130,17 +128,13 @@ export default function Home() {
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Welcome to Mernist - Your Technology Partner"
-        />
+        <meta name="twitter:title" content="Mernist | Asar Ahmed" />
         <meta
           name="twitter:description"
-          content="With over 2 years of experience, I specialize in cutting-edge technologies. Turn your digital ideas into reality with my diverse skill set and unwavering dedication to excellence."
+          content="Turn your digital ideas into reality with my diverse skill set and unwavering dedication to excellence."
         />
         <meta name="twitter:image" content="/logo.png" />
         <meta name="twitter:url" content="https://mernist.me" />
-        {/* <!-- <meta name="twitter:site" content="@yourtwitterhandle" /> --> */}
 
         {/* <!-- Canonical Link --> */}
         <link rel="canonical" href="https://mernist.me" />

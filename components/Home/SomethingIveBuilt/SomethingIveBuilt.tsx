@@ -46,7 +46,7 @@ export default function SomethingIveBuilt() {
           >
             <div className="relative rounded-md w-full h-full col-span-7 ">
               <a
-                href="https://sample-gui.vercel.app/"
+                href="https://samplegui.international/"
                 target={"_blank"}
                 rel="noreferrer"
               >
@@ -85,10 +85,10 @@ export default function SomethingIveBuilt() {
             >
               <div className="flex flex-col space-y-1 md:items-end z-10">
                 <span className="text-secondary text-base">
-                  Samplegui.international <span className="text-xs text-white">( Working )</span>
+                  Samplegui.international <span className="text-xs text-white">( Recent )</span>
                 </span>
                 <a
-                  href="https://sample-gui.vercel.app/"
+                  href="https://samplegui.international/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -123,7 +123,7 @@ export default function SomethingIveBuilt() {
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">
                 <a
-                  href="https://sample-gui.vercel.app/"
+                  href="https://samplegui.international/"
                   target={"_blank"}
                   rel="noreferrer"
                 >
@@ -391,7 +391,7 @@ export default function SomethingIveBuilt() {
             >
               <div className="flex flex-col space-y-1 md:items-end z-10">
                 <span className="text-secondary text-base">
-                  Mernist Discord
+                  Mernist Discord ( Fav. )
                 </span>
                 <a
                   href="http://mernist.live/"

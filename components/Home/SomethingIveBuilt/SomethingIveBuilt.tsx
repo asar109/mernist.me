@@ -99,7 +99,7 @@ export default function SomethingIveBuilt() {
                 </a>
               </div>
               <div className="w-full md:bg-tertiary rounded-md py-6 md:p-6  z-10">
-                <p className="text-gray-300 md:text-gray-400 text-justify md:text-right ">
+              <p className="text-gray-300 md:text-gray-400 text-left">
                   Recently worked on a Next.js project with{" "}
                   <span className="text-secondary">Shadcn UI</span>, created a
                   visually stunning website with three key pages. The homepage

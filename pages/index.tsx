@@ -11,7 +11,7 @@ import GetInTouch from "../components/Home/GetInTouch/GetInTouch";
 import MyName from "../components/Home/MyName/MyName";
 import SocialMediaArround from "../components/Home/SocialMediaArround/SocialMediaArround";
 import SomethingIveBuilt from "../components/Home/SomethingIveBuilt/SomethingIveBuilt";
-import ReactGA from "react-ga4";
+import ReactGA4 from "react-ga4";
 export default function Home() {
   const [ShowElement, setShowElement] = useState(true);
   // context Variable to clearInterval
@@ -56,8 +56,7 @@ export default function Home() {
   setTimeout(() => {}, 5000);
 
   useEffect(() => {
-    ReactGA.initialize(process.env.GA_ID);
-
+    ReactGA4.initialize("G-NX9B06462C");
     Aos.init({ duration: 2000, once: true });
   }, []);
 

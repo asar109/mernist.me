@@ -2,7 +2,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
 import { Fragment, useContext, useEffect, useRef, useState } from "react";
-import ReactGA from "react-ga";
 import AppContext from "../components/AppContextFolder/AppContext";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
@@ -12,6 +11,7 @@ import GetInTouch from "../components/Home/GetInTouch/GetInTouch";
 import MyName from "../components/Home/MyName/MyName";
 import SocialMediaArround from "../components/Home/SocialMediaArround/SocialMediaArround";
 import SomethingIveBuilt from "../components/Home/SomethingIveBuilt/SomethingIveBuilt";
+import ReactGA from "react-ga4";
 export default function Home() {
   const [ShowElement, setShowElement] = useState(true);
   // context Variable to clearInterval
@@ -57,7 +57,6 @@ export default function Home() {
 
   useEffect(() => {
     ReactGA.initialize(process.env.GA_ID);
-    ReactGA.pageview(window.location.pathname + window.location.search);
 
     Aos.init({ duration: 2000, once: true });
   }, []);
@@ -96,7 +95,8 @@ export default function Home() {
   };
 
   return (
-    <Fragment>
+    <Fragment
+    >
       <Head>
         <title>{meta.title}</title>
         <meta
@@ -135,6 +135,7 @@ export default function Home() {
         />
         <meta name="twitter:image" content="/logo.png" />
         <meta name="twitter:url" content="https://mernist.me" />
+        {/* <!-- <meta name="twitter:site" content="@yourtwitterhandle" /> --> */}
 
         {/* <!-- Canonical Link --> */}
         <link rel="canonical" href="https://mernist.me" />

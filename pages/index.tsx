@@ -56,7 +56,7 @@ export default function Home() {
   setTimeout(() => {}, 5000);
 
   useEffect(() => {
-    ReactGA.initialize(process.env.GA_ID);
+    ReactGA.initialize(process.env.GA_ID!);
 
     Aos.init({ duration: 2000, once: true });
   }, []);

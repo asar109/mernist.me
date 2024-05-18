@@ -139,6 +139,22 @@ export default function Home() {
 
         {/* <!-- Canonical Link --> */}
         <link rel="canonical" href="https://mernist.me" />
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=GTM-WB47R7VR`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'GTM-WB47R7VR', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
       </Head>
       <body className="relative snap-mandatory min-h-screen bg-primary w-full ">
         {context.sharedState.finishedLoading ? (
@@ -172,7 +188,7 @@ export default function Home() {
           <></>
         )}
       </body>
-      <GoogleTagManager gtmId="GTM-WB47R7VR" />
+      {/* <GoogleTagManager gtmId="GTM-WB47R7VR" /> */}
     </Fragment>
   );
 }

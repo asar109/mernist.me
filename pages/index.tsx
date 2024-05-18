@@ -12,6 +12,7 @@ import MyName from "../components/Home/MyName/MyName";
 import SocialMediaArround from "../components/Home/SocialMediaArround/SocialMediaArround";
 import SomethingIveBuilt from "../components/Home/SomethingIveBuilt/SomethingIveBuilt";
 import ReactGA4 from "react-ga4";
+import gtm from "@next/third-parties/dist/google/gtm"
 export default function Home() {
   const [ShowElement, setShowElement] = useState(true);
   // context Variable to clearInterval
@@ -57,6 +58,7 @@ export default function Home() {
 
   useEffect(() => {
     ReactGA4.initialize("G-NX9B06462C");
+    gtm.GoogleTagManager({ gtmId: "GTM-WB47R7VR" });
 
     Aos.init({ duration: 2000, once: true });
   }, []);
@@ -139,6 +141,9 @@ export default function Home() {
 
         {/* <!-- Canonical Link --> */}
         <link rel="canonical" href="https://mernist.me" />
+
+
+
       </Head>
       <div className="relative snap-mandatory min-h-screen bg-primary w-full ">
         {context.sharedState.finishedLoading ? (
@@ -172,6 +177,7 @@ export default function Home() {
           <></>
         )}
       </div>
+
     </Fragment>
   );
 }

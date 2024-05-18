@@ -57,6 +57,7 @@ export default function Home() {
 
   useEffect(() => {
     ReactGA4.initialize("G-NX9B06462C");
+
     Aos.init({ duration: 2000, once: true });
   }, []);
 

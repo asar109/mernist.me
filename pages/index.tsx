@@ -1,4 +1,3 @@
-
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
@@ -15,12 +14,15 @@ import SocialMediaArround from "../components/Home/SocialMediaArround/SocialMedi
 import SomethingIveBuilt from "../components/Home/SomethingIveBuilt/SomethingIveBuilt";
 export default function Home() {
   const [ShowElement, setShowElement] = useState(true);
+  const [isClient, setIsClient] = useState(false);
   // context Variable to clearInterval
   const context = useContext(AppContext);
   const aboutRef = useRef<HTMLDivElement>(null);
   const homeRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    setIsClient(true);
+
     // remove the interval Cookie timer setter when
     clearInterval(context.sharedState.userdata.timerCookieRef.current);
     if (typeof window !== "undefined") {
@@ -94,6 +96,10 @@ export default function Home() {
     image: "/logo_landscape.PNG",
     type: "website",
   };
+
+  if (!isClient) {
+    return <></>;
+  }
 
   return (
     <Fragment>

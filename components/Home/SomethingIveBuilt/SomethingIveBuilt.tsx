@@ -158,7 +158,7 @@ export default function SomethingIveBuilt() {
               </a>
 
               <Img
-                src={"/projects/geni.png"}
+                src={"/projects/geniuswriter.png"}
                 alt={"Project Screen shot"}
                 className={`w-full rounded h-full `}
               />
@@ -173,7 +173,7 @@ export default function SomethingIveBuilt() {
                 <div className="absolute w-full h-full bg-secondary opacity-10 z-10"></div>
                 <div className="absolute w-full h-full bg-primary opacity-80 z-10"></div>
                 <Img
-                  src={"/projects/geni.png"}
+                  src={"/projects/geniuswriter.png"}
                   alt={"Project Screen shot"}
                   className={`w-full h-full `}
                 />
@@ -557,13 +557,16 @@ export default function SomethingIveBuilt() {
           absolute md:grid grid-cols-12 w-full h-full  content-center"
           >
             <div className="relative rounded-md w-full h-full col-span-7 ">
-              <span
+              <a
+                href="https://vibeground.com/"
+                target={"_blank"}
+                rel="noreferrer"
               >
                 <div
                   className="absolute w-full h-full rounded bg-primary 
-           transition-opacity opacity-30 hover:opacity-0 duration-300"
+           transition-opacity opacity-30 hover:opacity-0 hover:cursor-pointer duration-300"
                 ></div>
-              </span>
+              </a>
 
               <Img
                 src={"/projects/vibeground.PNG"}
@@ -594,12 +597,15 @@ export default function SomethingIveBuilt() {
             >
               <div className="flex flex-col space-y-1 md:items-end z-10">
                 <span className="text-secondary text-base">Vibeground</span>
-                <span
+                <a
+                  href="https://vibeground.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <span className=" md:text-gray-200 text-secondary font-bold text-xl">
+                  <span className=" md:text-gray-200 text-secondary font-bold text-xl hover:cursor-pointer">
                     Vibeground.com
                   </span>
-                </span>
+                </a>
               </div>
               <div className="w-full md:bg-tertiary rounded-md py-6 md:p-6  z-10">
                 {" "}
@@ -625,7 +631,15 @@ export default function SomethingIveBuilt() {
                 <span className="pr-4 z-10">Nodemailer</span>
                 <span className="pr-4 z-10">MongoDB</span>
               </ul>
-              
+              <div className="z-10 flex fle-row space-x-5 ">
+                <a
+                  href="https://vibeground.com/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <ExternalLink url={""} router={router} />
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -2,8 +2,8 @@ import ArrowIcon from "../../../components/Icons/ArrowIcon";
 import Img from "../../../components/smallComp/image/Img";
 export default function AboutMe(props) {
   const technologies = [
-    ["Next.js", "JavaScript (ES6+)", "Tailwind CSS", "React.js", "Prisma"],
-    ["Socket.io", "Node.js", "TypeScript", "Framer Motion", "React Native"],
+    ["Next.js", "JavaScript (ES6+)", "Tailwind CSS", "React.js", "Prisma" , "Browser Extensions" , "Chatgpt" , "Google APIs"],
+    ["Socket.io", "Node.js", "TypeScript", "Framer Motion", "React Native" , "Nest.js" , "Stripe" , "Google analytics"],
   ];
 
   return (
@@ -75,7 +75,7 @@ export default function AboutMe(props) {
 
             <div className="font-Header tracking-wide">
               <span className="text-gray-400  ">
-                Here are a few technologies I&apos;ve been working with recently
+                Here are a few technologies I&apos;ve been working with
                 :
               </span>
             </div>

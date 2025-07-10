@@ -38,12 +38,7 @@ export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
       >
         <div className="flex flex-col space-y-8 justify-center items-center">
           <div className="flex flex-col justify-center items-center space-y-5">
-            {/* Facebook */}
-            <IconClickableWithAnimation
-              Icon={Facebook}
-              href={"https://www.facebook.com/themernsit"}
-              />
-              {/* Github Icon */}
+            {/* Github Icon */}
             <IconClickableWithAnimation
               Icon={GithubIcon}
               href={"https://github.com/asar109"}
@@ -53,6 +48,12 @@ export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
               Icon={LinkedinIcon}
               href={"https://www.linkedin.com/in/asar-ahmed-b0781120b"}
             />
+            {/* Facebook */}
+            <IconClickableWithAnimation
+              Icon={Facebook}
+              href={"https://www.facebook.com/themernsit"}
+            />
+
           </div>
           <div className="h-28 w-0.5 bg-gray-400"></div>
         </div>

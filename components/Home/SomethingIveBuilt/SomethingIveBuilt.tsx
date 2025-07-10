@@ -37,12 +37,10 @@ export default function SomethingIveBuilt() {
         </div>
         <div className="bg-gray-400 h-[0.2px] text-white text-xs w-full xl:w-1/3 md:w-1/2"></div>
       </div>
-      <span className="text-sm text-gray-400 md:text-base ">
-        <span className="text-sm text-gray-400 md:text-base">
-          Each project reflects the client’s goals and available resources. Some
-          were built under tight budgets or timelines—but all were crafted to
-          solve real needs. With the right scope, I always aim for top results.
-        </span>
+      <span className="text-sm text-gray-400 md:text-base">
+        💡 Heads up: A few projects were completed under limited budgets or
+        tight deadlines, so they may not fully reflect my capabilities. With the
+        right time and scope, I go the extra mile!
       </span>
 
       <div className="flex flex-col xl:space-y-36 space-y-8 md:space-y-28">

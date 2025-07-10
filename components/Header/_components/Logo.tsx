@@ -16,7 +16,13 @@ export default function Logo() {
           delay: 5,
           duration: 1,
         }}
-        className=" relative h-12 w-10 "
+        className=" relative h-12 w-10 hover:cursor-pointer"
+        onClick={() => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }}
       >
         <motion.span
           initial={{ x: 1 }}

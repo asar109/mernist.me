@@ -16,7 +16,7 @@ const Project_8 = () => {
         absolute md:grid grid-cols-12 w-full h-full content-center"
       >
         <div className="relative rounded-md w-full h-full col-span-7">
-          <a href="https://aceyourpapers.com/" target="_blank" rel="noreferrer">
+          <a href="https://aceyourpapers.vercel.app/" target="_blank" rel="noreferrer">
             <div
               className="absolute w-full h-full rounded bg-primary 
               transition-opacity opacity-30 hover:opacity-0 hover:cursor-pointer duration-300"
@@ -54,7 +54,7 @@ const Project_8 = () => {
               AceYourPapers.com <span className="text-xs text-white">( Working )</span>
             </span>
             <a
-              href="https://aceyourpapers.com/"
+              href="https://aceyourpapers.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -87,7 +87,7 @@ const Project_8 = () => {
             <span className="pr-4 z-10">Stripe</span>
           </ul>
           <div className="z-10 flex flex-row space-x-5">
-            <a href="https://aceyourpapers.com/" target={"_blank"} rel="noreferrer">
+            <a href="https://aceyourpapers.vercel.app/" target={"_blank"} rel="noreferrer">
               <ExternalLink url={""} router={router} />
             </a>
           </div>

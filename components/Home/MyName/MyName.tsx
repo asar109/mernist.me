@@ -38,8 +38,9 @@ export default function MyName(props: { finishedLoading: boolean }) {
         }}
         className="text-gray-300 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
       >
-        Asar Ahmed.
+        Asar Ahmed <span className="text-secondary text-xl">(Mernist)</span>
       </motion.h1>
+
       <motion.h2
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -55,7 +56,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
         }}
         className="text-gray-400 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
       >
-        I make ideas & things alive.
+        I bring ideas to life.
       </motion.h2>
 
       <motion.h3
@@ -73,18 +74,18 @@ export default function MyName(props: { finishedLoading: boolean }) {
         }}
         className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
       >
-        I&apos;m a <span className="text-secondary">Full Stack Developer</span>{" "}
-        with a knack for problem-solving and a passion for crafting exceptional
-        digital experiences. My expertise lies in the{" "}
-        <span className="text-secondary">MERN stack</span>, where I specialize
-        in developing and designing immersive{" "}
+        I'm a <span className="text-secondary">Full Stack Developer</span>{" "}
+        specialized in building high-performance{" "}
+        <span className="text-secondary">MERN stack</span> applications. I help
+        startups and businesses bring ideas to life by developing
         <span className="text-secondary">
-          dynamic web & mobile applications
-        </span>
-        . This involves extensive work with{" "}
-        <span className="text-secondary">React</span>,{" "}
-        <span className="text-secondary">Next</span>,{" "}
-        <span className="text-secondary">Node</span>, and{" "}
+          {" "}
+          dynamic web & mobile experiences
+        </span>{" "}
+        that are fast, scalable, and user-focused. My core tools include{" "}
+        <span className="text-secondary">React</span>,
+        <span className="text-secondary">Next.js</span>,
+        <span className="text-secondary">Node.js</span>, and{" "}
         <span className="text-secondary">TypeScript</span>.
         {/* <br className="2xl:block hidden" />creating and deploying them, as well as implementing the
         front-end components to enable seamless user interactions. */}

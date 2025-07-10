@@ -1,13 +1,13 @@
 import { useRouter } from "next/router";
 import ArrowIcon from "../../Icons/ArrowIcon";
+import Daroon from "./Daroon";
 import Project_1 from "./Project_1";
 import Project_2 from "./Project_2";
 import Project_3 from "./Project_3";
 import Project_4 from "./Project_4";
 import Project_5 from "./Project_5";
 import Project_6 from "./Project_6";
-import Project_7 from "./Project_7";
-import Project_8 from "./Project_8";
+import AceYouPapers from "./Project_8";
 
 export default function SomethingIveBuilt() {
   const router = useRouter();
@@ -37,10 +37,17 @@ export default function SomethingIveBuilt() {
         </div>
         <div className="bg-gray-400 h-[0.2px] text-white text-xs w-full xl:w-1/3 md:w-1/2"></div>
       </div>
+      <span className="text-sm text-gray-400 md:text-base ">
+        <span className="text-sm text-gray-400 md:text-base">
+          Each project reflects the client’s goals and available resources. Some
+          were built under tight budgets or timelines—but all were crafted to
+          solve real needs. With the right scope, I always aim for top results.
+        </span>
+      </span>
 
       <div className="flex flex-col xl:space-y-36 space-y-8 md:space-y-28">
-        <Project_7/>
-        <Project_8/>
+        <Daroon />
+        <AceYouPapers />
         <Project_6 />
         <Project_5 />
         <Project_4 />

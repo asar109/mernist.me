@@ -1,5 +1,6 @@
 import ArrowIcon from "../../../components/Icons/ArrowIcon";
 import Img from "../../../components/smallComp/image/Img";
+
 export default function AboutMe(props) {
   const technologies = [
     ["Next.js", "JavaScript (ES6+)", "Tailwind CSS", "React.js", "Prisma" , "Browser Extensions" , "Chatgpt" , "Google APIs"],
@@ -40,36 +41,17 @@ export default function AboutMe(props) {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                <span className="text-secondary">Welcome to Mernist </span>
-                I&apos;m a firm believer that passion knows no bounds, and my
-                journey from a is a testament to that belief. While my academic
-                background may have been rooted in{" "}
-                <span className="text-secondary ">BBA graduate</span> to a
-                seasoned tech enthusiast business administration, my heart was
-                always drawn to the ever-evolving realm of technology.
+                <span className="text-secondary">Welcome to Mernist.</span> I’m a firm believer that passion knows no bounds. My journey from a <span className="text-secondary">BBA graduate</span> to a full-stack tech enthusiast is a testament to that. While my academic background is in business administration, I was always drawn to the ever-evolving world of technology.
+                </span>
+            </div>
+            <div className="font-Header ">
+              <span className="text-gray-400 ">
+                Fueled by curiosity and a drive to build, I immersed myself in self-learning, exploring the vast digital ecosystem. What started as a hobby quickly evolved into a full-fledged profession — and I haven’t looked back since.
               </span>
             </div>
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Driven by an insatiable curiosity and a hunger for knowledge, I
-                embarked on a journey of{" "}
-                <span className="text-secondary">self-discovery,</span>{" "}
-                immersing myself in the vast ocean of digital possibilities.
-                What started as a mere interest soon blossomed into a
-                full-fledged passion, shaping the trajectory of my professional
-                life.
-              </span>
-            </div>
-            <div className="font-Header ">
-              <span className="text-gray-400 ">
-                Over the past <span className="text-secondary">two years</span>, I&apos;ve had the
-                privilege of diving deep into the world of development,
-                specializing primarily in the
-                <span className="text-secondary"> MERN stack.</span>
-                This dynamic combination of technologies has allowed me to craft
-                robust and scalable solutions that seamlessly integrate
-                front-end and back-end functionalities, bringing digital visions
-                to life with finesse and precision.
+                Over the past <span className="text-secondary">two years</span>, I’ve specialized in the <span className="text-secondary">MERN stack</span>, delivering scalable and production-ready applications. My work seamlessly bridges front-end and back-end systems to create smooth, real-world user experiences.
               </span>
             </div>
 

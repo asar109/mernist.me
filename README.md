@@ -1,30 +1,30 @@
-# Welcome to Mernist.me
+# 💻 Asar Ahmed (Mernist)
 
-## About
-Mernist.me is my personal portfolio website, showcasing my projects, skills, and experience as a Full Stack Developer. This platform aims to provide visitors with insights into my capabilities and expertise in creating dynamic web and mobile applications.
+Hi! I'm **Asar Ahmed**, a Full Stack Developer specialized in building high-performance **MERN stack** applications. I help startups and businesses bring ideas to life by crafting web & mobile experiences that are **fast**, **scalable**, and **user-focused**.
 
-## Features
-- **Project Showcase:** Explore a collection of my latest projects, each highlighting different aspects of my skills and creativity.
-- **Skills:** Discover the technologies and tools I specialize in, including the MERN stack, JavaScript, React, Node.js, and more.
-- **About Me:** Learn about my background, interests, and journey as a developer through a concise yet informative section.
-- **Contact:** Reach out to me easily via email or connect with me on professional networks like LinkedIn and GitHub.
+> **Location:** Gujranwala, Pakistan (open to relocation)  
+> **Email:** [themernist@gmail.com](mailto:themernist@gmail.com)  
+> **Website:** [mernist.netlify.app](https://mernist.me)  
+> **Tech Stack:** Next.js, Node.js, TypeScript, React, MongoDB, Prisma, Socket.IO, Tailwind CSS, Stripe
 
-## Technologies Used
-- **Frontend:** HTML, CSS, JavaScript, React.js, Tailwind CSS
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Deployment:** Heroku
+---
 
-## Getting Started
-1. Clone the repository: `git clone https://github.com/asar109/mernist.me.git`
-2. Navigate to the project directory: `cd mernist.me`
-3. Install dependencies: `npm install`
-4. Run the development server: `npm start`
-5. Open your browser and visit: `http://localhost:3000`
+## 🔍 About Me
 
-## Contributions
-Contributions are welcome! Feel free to fork the repository and submit pull requests with any enhancements or fixes.
+Welcome to **Mernist** 👋
 
+I’m a firm believer that passion knows no bounds. My journey from a **BBA graduate** to a self-taught **Full Stack Developer** is a testament to my curiosity and drive to build.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Over the past two years, I’ve delivered production-ready, scalable web applications using the **MERN stack**. Whether it's a feature-rich admin dashboard, a real-time chat app, or a landing page with scroll-triggered animations — I build things that solve real problems.
+
+---
+
+## 🛠️ Tech I Use
+
+```ts
+Frontend      : React, Next.js, Tailwind CSS, Framer Motion, Shadcn UI  
+Backend       : Node.js, Express, NestJS, Prisma, MongoDB, MySQL  
+Auth & APIs   : Clerk, Firebase, Google APIs, ChatGPT, Replicate API  
+Payments      : Stripe  
+Real-Time     : Socket.IO, LiveKit  
+Others        : Tawk.to, Vercel, Docker, Postman
